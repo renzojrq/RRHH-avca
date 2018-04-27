@@ -1,0 +1,43 @@
+.sidebar {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 250px;
+  order: -1;
+}
+.sidebar-fixed {
+  height: 100vh;
+  position: fixed;
+}
+.sidebar-nav {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 250px;
+  .nav-link {
+    color: white;
+    &:hover {
+      color: navajowhite;
+    }
+  }
+}
+// Scrollbar
+.sidebar .sidebar-nav::-webkit-scrollbar {
+  position: absolute;
+  width: 10px;
+  margin-left: -10px;
+  -webkit-appearance: none;
+}
+.sidebar .sidebar-nav::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #151b1f;
+  background-clip: content-box;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px 2px;
+}
+.sidebar .sidebar-nav::-webkit-scrollbar-track {
+  background-color: #33444c;
+  border-right: 1px solid #1f292e;
+  border-left: 1px solid #1f292e;
+}
