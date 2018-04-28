@@ -38,3 +38,10 @@ vertical-align: middle;
 }
 .margin-center{margin:auto;
 }
+.radio-center{display: table;
+
+text-align: center;
+
+margin: auto;
+
+left: -9px;}
