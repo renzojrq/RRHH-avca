@@ -11,7 +11,7 @@
 
 	
 		<br>
-		<div class="margin-center col-md-10">
+		<div class="margin-center col-md-8">
 			<div class="table-responsive" >
 			
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nuevasucursal" style="float: right; margin-bottom: 10px;"> <i class="fas fa-plus-square"> </i> Sucursal</button>
