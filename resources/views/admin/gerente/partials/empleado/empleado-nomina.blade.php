@@ -31,6 +31,6 @@
     @include ('admin.gerente.partials.submenu.empleado-datos')
     <br>
 
-<h1>estoy en Nominas e informacion</h1>
+<h1>estoy en Nominas e informacio</h1>
 
 @endsection

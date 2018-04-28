@@ -85,17 +85,10 @@
         {{--Datos del empleado--}}
         <li class="nav-item">
           <a class="nav-link"  href="{{ route('admin.gerente.partials.empleado.empleado-nomina')}}" role="button">
-            <i class="fas fa-user"></i> Datos del empleado
-            <i class="fas fa-caret-down" aria-hidden="true"></i>
+            <i class="fas fa-user"></i> Datos del empleado</i>
           </a>
           
-            <ul class="nav pl-3 flex-column">
-              <li class="nav-item"><a href="#" class="nav-link">Datos personales</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Carga familiar</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Datos laborales</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Cargar oficios</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Beneficios laborales</a></li>
-            </ul>
+          
           
         </li>
         {{--Administracion de nominas--}}
