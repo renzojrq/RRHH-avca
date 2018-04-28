@@ -1,4 +1,7 @@
-<ul class="nav nav-tabs">
+
+  
+
+<ul class="nav nav-tabs justify-content-center">
   <li class="nav-item">
     <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.captacion.seleccion.aspirantes-registrados') }}"><i class="fas fa-sync"></i> Registrados</a>
   </li>

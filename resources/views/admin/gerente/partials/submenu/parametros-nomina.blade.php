@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs justify-content-center">
   <li class="nav-item">
     <a class="nav-link" href="{{ ROUTE('admin.mantenimiento.tabulador') }}"><i class="fas fa-sync"></i> Tabulador Salarial</a>
   </li>

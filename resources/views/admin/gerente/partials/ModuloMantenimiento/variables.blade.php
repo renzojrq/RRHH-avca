@@ -72,9 +72,9 @@
 		</div>
 	</div>
 </div>
-			<!-- Modal Configurar Conceptos-->
+			<!-- Modal Configurar Variables-->
 		<div class="modal fade" id="configurarvariable" tabindex="-1" role="dialog" aria-labelledby="configurarvariable" aria-hidden="true" class="fondo-modal">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
+			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header color-cabecera">
 			        <h5 class="modal-title" id="exampleModalLongTitle">Configurar Variable de Nómina</h5>
@@ -91,9 +91,17 @@
 		    </div>
 		    <div class="form-group">	
 
-		    <label for="">Valor%</label>
-		    <input type="text" class="form-control" id="valor" placeholder="Ingrese %" name="nombre" value="N/A" readonly="">
-		    </div>
+		    <div class="custom-control custom-radio custom-control-inline">
+  					<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+  					<label class="custom-control-label" for="customRadioInline1" >Monto Fijo</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+  					<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  					<label class="custom-control-label" for="customRadioInline2">Valor %</label>
+				</div>
+		        
+</div>
+		   
 		    <div class="form-group">	
 
 		    <label for="">Monto Fijo:</label>
@@ -135,17 +143,39 @@
 			      </div>
 			      <div class="modal-body">
 	 <form class="form-group">
-		    <label for="">Nombre:</label>
+	 	<div class="form-group">
+	 			    <label for="">Nombre:</label>
 		    <input type="text" class="form-control" id="nombre" name="nombre" >
-		    </style>
+		    </div>
+
+		    <div class="form-group">	
+
+		    <div class="custom-control custom-radio custom-control-inline">
+  					<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+  					<label class="custom-control-label" for="customRadioInline1" >Monto Fijo</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+  					<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  					<label class="custom-control-label" for="customRadioInline2">Valor %</label>
+				</div>
+		        
+</div>
+			<div class="form-group">
 		    <label for="">Valor%</label>
 		    <input type="text" class="form-control" id="valor" placeholder="Ingrese %" name="nombre">
+		    </div>
+		    <div class="form-group">
 		    <label for="">Monto Fijo:</label>
 		    <input type="text" class="form-control" id="montofijo" placeholder="Ingrese el Monto" name="nombre" >
+		    </div>
+		    <div class="form-group">
 		    <label for="">Base de Cálculo:</label>
 		    <input type="text" class="form-control" id="basecalculo" placeholder="Ingrese Base de Cálculo" name="basecalculo">
-		    <label for="">N° de Días:</label>
+		    </div>
+		    <div class="form-group">
+		    		    <label for="">N° de Días:</label>
 		    <input type="text" class="form-control" id="ndias" placeholder="Ingrese Número de días" name="nombre">
+		    </div>
 		    <div class="modal-footer">
 		     
 		       <button type="submit" class="btn btn-primary centrado-boton">Guardar</button>

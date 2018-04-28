@@ -29,6 +29,10 @@
 	  </fieldset>
     @include ('admin.gerente.partials.submenu.seleccion-gerente')
     <br>
+    <div class="text-lg-center" style="font-weight: bold;">Aspirantes Registrados 
+      </div>
+      <br>
+    
     <div class="col-md-7 margin-center">
        
     <div class="table-responsive" >
@@ -38,27 +42,27 @@
                     <th class="col-md-1 align-middle">Fecha</th>
                     <th class="align-middle">Nombres y apellidos</th>
                     <th class="col-md-1 text-sm-center">Curriculum Vitae</th>
-                    <th class="col-md-2 text-sm-center">Verificar</th>
+                    <th class="col-md-3 text-sm-center">Verificar</th>
                     </tr>
                 </thead>
                 <tbody class="tbody-label-sm">
                   <tr>
                     <td class="align-middle">20/10/2017</td>
                     <td class="align-middle">Hugo Rafael Alí Zorrilla</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf "></i></button></td>
                     <td><div class="text-center" >
-                        <button type="button" class="btn btn-danger"><i class="fas fa-thumbs-down"> </i> </button>
-                        <button type="button" class="btn btn-success"><i class="fas fa-thumbs-up"></i> </button>
+                        <button type="button" class="btn btn-outline-danger"><i class="fas fa-thumbs-down"> </i> </button>
+                        <button type="button" class="btn btn-outline-success"><i class="fas fa-thumbs-up"></i> </button>
                         </div></td>
                   </tr>
                   
                   <tr>
                     <td class="align-middle">22/12/2017</td>
                     <td class="align-middle">Leomar Alexander Esparragoza</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf"></i></button></td>
                     <td><div class="text-center" >
-                        <button type="button" class="btn btn-danger"><i class="fas fa-thumbs-down"> </i> </button>
-                        <button type="button" class="btn btn-success"><i class="fas fa-thumbs-up"></i> </button>
+                        <button type="button" class="btn btn-outline-danger"><i class="fas fa-thumbs-down"> </i> </button>
+                        <button type="button" class="btn btn-outline-success"><i class="fas fa-thumbs-up"></i> </button>
                         </div></td>
 
                   </tr>
@@ -66,10 +70,10 @@
                   <tr>
                     <td class="align-middle">22/12/2017</td>
                     <td class="align-middle">Jesús Machado</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf"></i></button></td>
                     <td><div class="text-center" >
-                        <button type="button" class="btn btn-danger"><i class="fas fa-thumbs-down"> </i> </button>
-                        <button type="button" class="btn btn-success"><i class="fas fa-thumbs-up"></i> </button>
+                        <button type="button" class="btn btn-outline-danger"><i class="fas fa-thumbs-down"> </i> </button>
+                        <button type="button" class="btn btn-outline-success"><i class="fas fa-thumbs-up"></i> </button>
                         </div></td>
 
 
@@ -77,10 +81,10 @@
                   <tr>
                     <td class="align-middle">10/01/2018</td>
                     <td class="align-middle">Pedro Russo</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-file-pdf"></i></button></td>
                     <td><div class="text-center" >
-                        <button type="button" class="btn btn-danger"><i class="fas fa-thumbs-down"> </i> </button>
-                        <button type="button" class="btn btn-success"><i class="fas fa-thumbs-up"></i> </button>
+                        <button type="button" class="btn btn-outline-danger"><i class="fas fa-thumbs-down"> </i> </button>
+                        <button type="button" class="btn btn-outline-success"><i class="fas fa-thumbs-up"></i> </button>
                         </div></td>
 
                   </tr>
