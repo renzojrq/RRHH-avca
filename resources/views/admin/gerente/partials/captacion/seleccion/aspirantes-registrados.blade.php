@@ -42,7 +42,7 @@
                     <th class="col-md-1 align-middle">Fecha</th>
                     <th class="align-middle">Nombres y apellidos</th>
                     <th class="col-md-1 text-sm-center">Curriculum Vitae</th>
-                    <th class="col-md-2 text-sm-center">Verificar</th>
+                    <th class="col-md-3 text-sm-center">Verificar</th>
                     </tr>
                 </thead>
                 <tbody class="tbody-label-sm">
