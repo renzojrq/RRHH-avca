@@ -18,6 +18,10 @@ Route::group(['prefix' => 'empleado', 'middleware' => 'auth'], function() {
     	return view('admin.gerente.partials.empleado.empleado-actualizarperfil');
 	})->name('admin.gerente.partials.empleado.empleado-actualizarperfil');
 
+    Route::get('/cargaoficio', function () {
+    	return view('admin.gerente.partials.empleado.empleado-oficio');
+	})->name('admin.gerente.partials.empleado.empleado-oficio');
+
 
 });
 

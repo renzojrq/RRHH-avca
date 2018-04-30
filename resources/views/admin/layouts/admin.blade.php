@@ -73,7 +73,7 @@
                   Reclutamiento <i class="fas fa-caret-down" aria-hidden="true"></i>
                 </a>
                 <div class="collapse pl-3" id="reclutamientoCollapse">
-                  <a href="#" class="nav-link">Interno</a>
+                  <a href="{{ route('admin.gerente.partials.captacion.reclutamiento.consulta-interno')}}" class="nav-link">Interno</a>
                   <a href="#" class="nav-link">Externo</a>
                 </div>
               </li>
