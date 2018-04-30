@@ -72,9 +72,9 @@
           <option value="" selected="selected">Seleccione</option>
           <option value="bachiller">Bachiller</option>
           <option value="tsu">TSU</option>
-          <option value="profesional">Profesional</option>
-          <option value="especialista 1">Especialista 1</option>
-          <option value="especialista 2">Especialista 2</option>
+          <option value="profesional">Universitaria</option>
+          <option value="especialista 1">Maestria</option>
+          <option value="especialista 2">Doctorado</option>
         </select>
         {{-- {!! Form::select('nivel_academico', [
             '' => 'Seleccione',

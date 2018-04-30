@@ -49,20 +49,20 @@
                   <tr>
                     <td class="align-middle">20/10/2017</td>
                     <td class="align-middle">Hugo Rafael Alí Zorrilla</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#entrevista"><i class="fas fa-clipboard"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#entrevista"><i class="fas fa-eye fa-2x" style="color: black"></i></button></td>
                     
                   </tr>
                   
                   <tr>
                     <td class="align-middle">22/12/2017</td>
                     <td class="align-middle">Leomar Alexander Esparragoza</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-clipboard"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-"></i></button></td>
                   </tr>
                   
                   <tr>
                     <td class="align-middle">22/12/2017</td>
                     <td class="align-middle">Jesús Machado</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-clipboard"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#actualizartabulador"><i class="fas fa-"></i></button></td>
 
                   </tr>
                   <tr>

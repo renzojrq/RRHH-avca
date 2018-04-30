@@ -56,15 +56,11 @@
                   <tr>
                     <td>22/12/2017</td>
                     <td>Jesús Machado</td>
-
-
                   </tr>
-                  
-
                   </tr>
                 </tbody>
               </table>
-              <br>      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#convocatoria" style="float: center; margin-bottom: 10px;"> <i class="fas fa-envelope-square"> </i>  Enviar Convocatoria
+              <br>      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#convocatoria" style="float: center; margin-bottom: 10px;"> <i class="fas fa-envelope-square"> </i>  Convocar a entrevista
               </button>           
              
 </div>
@@ -132,7 +128,7 @@
         </form>
   </div>
         <div class="modal-footer">
-            <button type="submit" class="btn btn-primary centrado-boton">Enviar</button>
+            <button type="submit" class="btn btn-primary centrado-boton"><i class="far fa-envelope"></i> Enviar</button>
         </div> 
 
     

@@ -51,15 +51,15 @@
                   <tr>
                     <td>20/10/2017</td>
                     <td>Hugo Rafael Alí Zorrilla</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="fas fa-phone-square fa-2x"></i></button></td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="fas fa-check-square fa-2x"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="fas fa-phone fa-2x"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="far fa-check-square fa-2x" style="color: green"></i></button></td>
                   </tr>
                                            
                   <tr>
                     <td>22/12/2017</td>
                     <td>Jesús Machado</td>
-                    <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="fas fa-phone-square fa-2x"></i></button></td>
-                  <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="fas fa-check-square fa-2x"></i></button></td>
+                    <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="fas fa-phone fa-2x"></i></button></td>
+                  <td class="text-sm-center"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#"><i class="far fa-check-square fa-2x" style="color: green"></i></button></td>
                   </tr>
                   
 

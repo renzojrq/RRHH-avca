@@ -18,6 +18,7 @@
   <!-- Main styles for this application -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/mantenimiento.css') }}">
+   <link rel="stylesheet" href="{{ asset('css/w3.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/awesomplete.css') }}">
 
 </head>
