@@ -7,27 +7,11 @@
         <legend>Aspirantes</legend>
      </div>
     <div class="card-block">
-      <fieldset>
-<!-- <div class="dropdown show">-->
-<div class="input-group input-group-md mb-3 col-md-8 margin-center">
 
-  <div class="input-group input-group-prepend">
-    <span class="input-group-text thead-label-sm" id="inputGroup-sizing-sm">Vacante a Consultar</span>
-    <input class="form-control"  list="mylist"/>   
-  </div>
 
-  <datalist id="mylist">
-    <option>Area Operacional, Cargo Piloto</option>
-    <option>Copiloto, primer oficial</option>
-    <option>Sobrecargo</option>
-    <option>Administrador de operaciones</option>
-    <option>Mecánico</option>
-    <option>Guía Caníno</option>
-    <option>Operador de Tráfico</option>
-  </datalist>
-</div>
-	  </fieldset>
-    @include ('admin.gerente.partials.submenu.seleccion-gerente')
+
+  
+	  @include ('admin.gerente.partials.submenu.seleccion-gerente')
     <br>
     <div class="text-lg-center" style="font-weight: bold;">Aspirantes Registrados 
       </div>
@@ -36,7 +20,7 @@
     <div class="margin-center col-md-8">
        
     <div class="w3-responsive" >
-	  <table class="w3-table-all w3-small w3-border table-condensed" style="clear: both;">
+	  <table class="w3-table-all w3-small w3-border " style="clear: both;">
                 <thead class="thead-light  thead-label-sm">
                   <tr>
                     <th class="align-middle w3-light-gray col-md-1 w3-border">Fecha</th>

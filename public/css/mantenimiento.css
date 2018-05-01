@@ -45,3 +45,9 @@ text-align: center;
 margin: auto;
 
 left: -9px;}
+fecha-table{ justify-content: middle; col
+}
+
+.tabla-distribucion {
+display: flex;
+}

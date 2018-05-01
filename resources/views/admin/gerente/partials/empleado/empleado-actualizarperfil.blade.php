@@ -4,14 +4,15 @@
 <div class="container fuente-contenido">
 	<div class="card">
    	 <div class="card-header">
-        <legend>Empleados</legend>
+     <!--   <legend>Empleados</legend>-->
+    @include ('admin.gerente.partials.submenu.empleado-datos')
      </div>
     <div class="card-block">
 
 
     
     
-    @include ('admin.gerente.partials.submenu.empleado-datos')
+    
 <br>
 <div class="row">
 <div class="col-md-6">
@@ -104,7 +105,7 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-7">
       <div class="form-group">
         {!! Form::label('direccion', 'Dirección local') !!}
         {!! Form::text('direccion', null, ['class' => 'form-control']) !!}

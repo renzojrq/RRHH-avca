@@ -3,7 +3,7 @@
 {!! Form::open() !!}
 
 <fieldset>
-  <legend>Datos personales</legend>
+  <h3>Datos personales</h3>
   <div class="row">
     <div class="col-md-3">
       {!! Form::label('cedula', 'Documento de identidad') !!}
