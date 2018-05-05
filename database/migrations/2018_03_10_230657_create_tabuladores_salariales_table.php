@@ -18,6 +18,7 @@ class CreateTabuladoresSalarialesTable extends Migration
             $table->integer('cod_nivel')->unique();
             $table->string('nivel');
             $table->float('sueldo_base');
+            $table->integer('interescala');
             $table->timestamps();
         });
     }

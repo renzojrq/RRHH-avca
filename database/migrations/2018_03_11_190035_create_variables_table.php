@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateConceptosNominasTable extends Migration
+class CreateVariablesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreateConceptosNominasTable extends Migration
      */
     public function up()
     {
-        Schema::create('conceptos_nominas', function (Blueprint $table) {
+        Schema::create('variables', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('tipo_concepto',50);
-            $table->string('descripcion',255);
-            $table->float('porcentaje');
-            $table->float('valor_fijo');
-            $table->float('valor_variable',255);
+
+            $table->string('nombre');
+            $table->float('valor')->nullable();
+            $table->float('monto_fijo')->nullable();
+            $table->float('base_calculo')->nullable();
+            $table->float('cantidad_dias')->nullable();
+
 
             $table->timestamps();
         });
@@ -32,6 +34,6 @@ class CreateConceptosNominasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('conceptos_nominas');
+        Schema::dropIfExists('variables');
     }
 }

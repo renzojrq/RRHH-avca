@@ -19,5 +19,11 @@ class DatabaseSeeder extends Seeder
         $this->call(ProfesionSeeder::class);
         $this->call(TipoExpedienteSeeder::class);
         $this->call(SubTipoExpedienteSeeder::class);
+        $this->call(VariablesTableSeeder::class);
+        $this->call(ConceptosTableSeeder::class);
+        $this->call(EmpleadoTableSeeder::class);
+
+
+
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEmpleadosConceptosNominasTable extends Migration
+class CreateEmpleadosConceptosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateEmpleadosConceptosNominasTable extends Migration
      */
     public function up()
     {
-        Schema::create('empleados_conceptos_nominas', function (Blueprint $table) {
+        Schema::create('empleados_conceptos', function (Blueprint $table) {
             $table->increments('id');
+
             $table->integer('empleado_id')->unsigned();
             $table->integer('concepto_id')->unsigned();
             $table->foreign('empleado_id')->references('id')->on('empleados')->onDelete('cascade');
-            $table->foreign('concepto_id')->references('id')->on('conceptos_nominas')->onDelete('cascade');$table->timestamps();
+            $table->foreign('concepto_id')->references('id')->on('conceptos')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
@@ -29,6 +31,6 @@ class CreateEmpleadosConceptosNominasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('empleados_conceptos_nominas');
+        Schema::dropIfExists('empleados_conceptos');
     }
 }

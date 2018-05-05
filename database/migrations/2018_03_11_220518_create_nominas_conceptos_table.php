@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNominasTable extends Migration
+class CreateNominasConceptosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreateNominasTable extends Migration
      */
     public function up()
     {
-        Schema::create('nominas', function (Blueprint $table) {
+        Schema::create('nominas_conceptos', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('fecha');
-            $table->enum('tipo',['regular','vacaciones','utilidades','prestaciones','liquidacion','ISL']);
-            $table->enum('estatus',['calculada','liquidada']);
+$table->integer('nomina_id')->unsigned();
+            $table->integer('concepto_id')->unsigned();
             
+            $table->foreign('nomina_id')->references('id')->on('nominas');
 
+            $table->foreign('concepto_id')->references('id')->on('conceptos');
+            
             $table->timestamps();
         });
     }
@@ -31,6 +33,6 @@ class CreateNominasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nominas');
+        Schema::dropIfExists('nominas_conceptos');
     }
 }
