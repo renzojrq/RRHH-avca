@@ -10,9 +10,6 @@
     @include ('admin.gerente.partials.submenu.empleado-datos')
     <br>
 
-
-
-
 {!! Form::open() !!}
 
 <div class="row form-group">
@@ -76,7 +73,7 @@
     
     
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-5">
       <div class="form-group">
         {!! Form::label('soporte', 'Anexar soporte') !!}
         {!! Form::file('soporte', ['class' => 'form-control-file']) !!}

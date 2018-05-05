@@ -14,9 +14,9 @@
   </li>
   
   <li class="nav-item">
-    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.expediente.accidentes') }}"><i class="fas fa-cogs"></i>Accidentes</a>
+    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.expediente.accidentes') }}"><i class="fas fa-cogs"></i>Accidentes Laborales</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.expediente.reposos') }}"><i class="fas fa-cogs"></i>Reposos Medicos</a>
+    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.expediente.reposos') }}"><i class="fas fa-cogs"></i>Reposos Médicos</a>
   </li>
 </ul>
