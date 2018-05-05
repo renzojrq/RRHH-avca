@@ -37,8 +37,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
      require "RutasEmpleado.php";
      require "Rutasreclutamiento.php";
      require "RutasExpediente.php";
+
 });
 
+require "RutasNomina.php";
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

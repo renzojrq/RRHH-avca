@@ -8,5 +8,5 @@ class TabuladorSalarial extends Model
 {
     protected $table = "tabuladores_salariales";
 
-    protected $fillable = ['nivel', 'sueldo_base'];
+    protected $fillable = ['nivel', 'sueldo_base','interescala'];
 }
