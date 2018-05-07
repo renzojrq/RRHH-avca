@@ -15,14 +15,17 @@ class DatabaseSeeder extends Seeder
         $this->call(SucursalesTableSeeder::class);
         $this->call(DepartamentosTableSeeder::class);
         $this->call(TabuladorSalarialTableSeeder::class);
+        $this->call(AreasTableSeeder::class);
         $this->call(CargosTableSeeder::class);
+        $this->call(VacantesTableSeeder::class);
         $this->call(ProfesionSeeder::class);
         $this->call(TipoExpedienteSeeder::class);
         $this->call(SubTipoExpedienteSeeder::class);
         $this->call(VariablesTableSeeder::class);
         $this->call(ConceptosTableSeeder::class);
+        
         $this->call(EmpleadoTableSeeder::class);
-
+        $this->call(AspirantesTableSeeder::class);
 
 
     }
