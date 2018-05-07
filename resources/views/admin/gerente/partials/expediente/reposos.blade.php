@@ -17,8 +17,8 @@
                                     <tr>
                                         <th class="col-md-1">Fecha</th>
                                         <th class="col-md-5">Reposos</th>
-                                        <th class="col-md-2">...</th>
-                                        <th class="col-md-2">...</th>
+                                        <th class="col-md-2">Fecha Inicio</th>
+                                        <th class="col-md-2">Fecha Final</th>
                                         
                                     </tr>
                                 </thead>

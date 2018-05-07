@@ -11,113 +11,121 @@
 
     
     @include ('admin.gerente.partials.submenu.empleado-datos')
-    <br>
+  
 <div class="container" style="text-align: center">
 <h3>Conceptos a aplicar al empleado</h3>
 </div>
 
-<div class="row">
+<div class="row form-group">
 <!--<div class="input-inline">-->
-	<form class="form-group">
-      <div class="col-md">
-      <h2> Asignaciones</h2>
-		   	<div class="custom-control custom-checkbox ">
-  				<input type="checkbox" class="custom-control-input" id="sueldobasico" Checked>
-  				<label class="custom-control-label" for="sueldobasico">Sueldo Básico</label>
-			</div>
+      <div class="col-md-6">
+      <h4> Asignaciones</h4>
+		   	  <div class="custom-control custom-checkbox ">
+    				<input type="checkbox" class="custom-control-input" id="sueldobasico" Checked>
+    				<label class="custom-control-label" for="sueldobasico">101  Sueldo Básico</label>
+			    </div>
 
-			<div class="custom-control custom-checkbox">
-  				<input type="checkbox" class="custom-control-input" id="primaantiguedad" checked>
-  				<label class="custom-control-label" for="primaantiguedad">Prima por antigüedad</label>
-			</div>
+			    <div class="custom-control custom-checkbox">
+    				<input type="checkbox" class="custom-control-input" id="primaantiguedad" checked>
+    				<label class="custom-control-label" for="primaantiguedad">103 Prima por antigüedad</label>
+			    </div>
 
-		    <div class="custom-control custom-checkbox">
-  				<input type="checkbox" class="custom-control-input" id="bonoasistencia">
-  				<label class="custom-control-label" for="bonoasistencia">Bono por asistencia</label>
-			</div>
+		      <div class="custom-control custom-checkbox">
+    				<input type="checkbox" class="custom-control-input" id="bonoasistencia">
+    				<label class="custom-control-label" for="bonoasistencia">201  Bono por asistencia</label>
+			    </div>
 
-		    <div class="custom-control custom-checkbox">
-  				<input type="checkbox" class="custom-control-input" id="primahijo">
-  				<label class="custom-control-label" for="primahijo">Prima por Hijos</label>
-			</div>
+		      <div class="custom-control custom-checkbox">
+    				<input type="checkbox" class="custom-control-input" id="primahijo">
+    				<label class="custom-control-label" for="primahijo">105 Prima por Hijos</label>
+			    </div>
 
-		   	<div class="custom-control custom-checkbox">
-  				<input type="checkbox" class="custom-control-input" id="horaextra">
-  				<label class="custom-control-label" for="horaextra">Horas Extras Diurnas</label>
-			</div>
+		   	  <div class="custom-control custom-checkbox">
+    				<input type="checkbox" class="custom-control-input" id="horaextra">
+    				<label class="custom-control-label" for="horaextra">107 Horas Extras Diurnas</label>
+			    </div>
 
-			<div class="custom-control custom-checkbox">
-  				<input type="checkbox" class="custom-control-input" id="horanocturna">
-  				<label class="custom-control-label" for="horanocturna">Horas Nocturnas</label>
-			</div>
-
-      <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="horaextranoc">
-          <label class="custom-control-label" for="horaextra">Horas Extras Nocturnas</label>
-      </div>
+			    <div class="custom-control custom-checkbox">
+    				<input type="checkbox" class="custom-control-input" id="horanocturna">
+    				<label class="custom-control-label" for="horanocturna">109  Horas Nocturnas</label>
+			    </div>
 
           <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="hdvp">
-          <label class="custom-control-label" for="hdv">Pago por Horas de Vuelo de Piloto</label>
-      </div>
+            <input type="checkbox" class="custom-control-input" id="horaextranoc">
+            <label class="custom-control-label" for="horaextra">111 Horas Extras Nocturnas</label>
+          </div>
 
-      <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="hdvc">
-          <label class="custom-control-label" for="hdv">Pago por Horas de Vuelo de Copiloto-Primer Oficial</label>
-      </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="hdvp">
+            <label class="custom-control-label" for="hdv">113 Pago por Horas de Vuelo de Piloto</label>
+          </div>
 
-      <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="hdvs">
-          <label class="custom-control-label" for="hdv">Pago por Horas de Vuelo de Sobrecargo</label>
-      </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="hdvc">
+            <label class="custom-control-label" for="hdv">115 Pago por Horas de Vuelo de Copiloto-Primer Oficial</label>
+          </div>
 
-      <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="bdp">
-          <label class="custom-control-label" for="hdv">Bono de productividad</label>
-      </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="hdvs">
+            <label class="custom-control-label" for="hdv">117 Pago por Horas de Vuelo de Sobrecargo</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="bdp">
+            <label class="custom-control-label" for="hdv">203 Bono de productividad</label>
+          </div>
   
 
-		    <div class="custom-control custom-checkbox">
-  				<input type="checkbox" class="custom-control-input" id="diaferiado">
-  				<label class="custom-control-label" for="diaferiado">Días Feriados y de descanso</label>
-			</div>
-      <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="bonoriesgo">
-          <label class="custom-control-label" for="bonoriesgo">Bono de Riesgo</label>
-      </div>
+		      <div class="custom-control custom-checkbox">
+    				<input type="checkbox" class="custom-control-input" id="diaferiado">
+    				<label class="custom-control-label" for="diaferiado">119  Días Feriados y de descanso</label>
+			    </div>
+      
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="bonoriesgo">
+            <label class="custom-control-label" for="bonoriesgo">205  Bono de Riesgo</label>
+          </div>
 
-  
+      </div>
 
 
 <div class="form-group">
 
 
-    <h2>Deducciones</h2>
+    <h4>Deducciones</h4>
 
 		    <div class="custom-control custom-checkbox">
   				<input type="checkbox" class="custom-control-input" id="sso"  checked="">
-  				<label class="custom-control-label" for="sso">SSO</label>
+  				<label class="custom-control-label" for="sso">502 SSO</label>
 			</div>
 
 		   	<div class="custom-control custom-checkbox">
   				<input type="checkbox" class="custom-control-input" id="spf" checked="">
-  				<label class="custom-control-label" for="spf">Seguro Paro Forzoso</label>
+  				<label class="custom-control-label" for="spf">504 Seguro Paro Forzoso</label>
 			</div>
 
 			<div class="custom-control custom-checkbox">
   				<input type="checkbox" class="custom-control-input" id="lph" checked="">
-  				<label class="custom-control-label" for="lph">Fondo de ahorro obligatorio de la Vivienda</label>
+  				<label class="custom-control-label" for="lph">506 Fondo de ahorro obligatorio de la Vivienda</label>
 			</div>
 
 		
       <div class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input" id="ejudicial">
-          <label class="custom-control-label" for="hdv">Embargo judicial</label>
+          <label class="custom-control-label" for="hdv">700 Embargo judicial</label>
       </div>
-
+</div>
 		    
 </form>
 </div>
+<footer>
+<hr>
+
+<div class="margin-center">
+
+<button type="submit" class="btn btn-primary">Guardar</button>  
+</div>
+</footer>
 <!--</div>-->
 
 

@@ -1,6 +1,9 @@
 
 <h1>Poner datos personales y foto empleado</h1>
 
+<label> id   num_oficio  fecha   descripcion   fecha_inicio  fecha_final   soporte_pdf   empleado_id</label>
+
+
 
 <ul class="nav nav-tabs justify-content-center">
   <li class="nav-item">

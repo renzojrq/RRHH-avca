@@ -18,60 +18,52 @@
       <div class="row">
         <div class="form-inline"> 
           
-          <div class="col-md-3 align-self-start ">
-             <img src="\images\logo-avca.png" class="img-fluid" style= "width:125px">
+          <div class="col-md-2 align-self-start">
+             <img src="\images\foto2.jpg" class="img-fluid" style= "width:125px">
           </div>            <!-- <div class="input-group">-->
           
 
           <div class="col-md">
+              <div class="form-inline form-group"> 
+                  <label class="col-md-1" style="font-style: bold">Nombre:</label>
+                  <input type="text" readonly class="form-control-plaintext col-md-4" style="font-style: italic;" value="Palomino Vergara de la Trinidad">
 
-                  <div class="form-inline form-group"> 
-                      <label for="">Nombre:
-                      <input type="text" readonly class="form-control-plaintext col-md-7" id="staticnombre" style="font-style: italic;" value="Palomino Vergara de la Trinidad">
+                  <label class="col-md-1">C.I.:</label>
+                  <input type="text" readonly class="form-control-plaintext col-md-2" style="font-style: bold;" value="V.-20555779">
 
-                      <label for="" class="col-md-5">C.I.:
-                      <input type="text" readonly class="form-control-plaintext col-md" id="staticci" style="font-style: bold;" value="V. 205557777"></label></label>
-           
+                  <label class="col-md-2">Fecha Ingreso:</label>
+                  <input type="text" readonly class="form-control-plaintext col-md-2" style="font-style: bold;" value="20/05/2011">
+        
+                   <label class="col-md-1">Sucursal:</label>
+                  <input type="text" readonly class="form-control-plaintext col-md-4" id="staticdept" value="Antonio José de Sucre">
+                              
+              
 
-                                                </div> 
-
-          <div class="form-inline form-group">
-                      <label for="staticdept" class="col-md-5 col-form-label" style="text-align: end"> Departamento:                           
-                     
-                                    <input type="text" readonly class="form-control-plaintext" id="staticdept" style="font-style: bold;" value="Dirección de logística">
-                    </label>
-
-
-                 
-                                  <label for="staticcargo" class="col-form-label">Cargo:
-                            
-                     <div class="col-md">                                   <input type="text" readonly class="form-control-plaintext" id="staticcargo" style="font-style: bold;" value="Asistente de dirección de logística"></label>
-                     </div>
-</div>
-                  </div>
-        </div>
+                <label class="col-md-2">Departamento:</label>
+                  <input type="text" readonly class="form-control-plaintext col-md-5" id="staticdept" value="Dirección de logística">
+                
+             
+              
+                <label for="" class="col-md-1">Cargo:</label>
+                <input type="text" readonly class="form-control-plaintext col-md-4" id="staticcargo" style="font-style: bold;" value="Asistente de dirección de logística">
+                   <label for="" class="col-md-3">Condición laboral:</label>
+                <input type="text" readonly class="form-control-plaintext col-md-1" id="staticcargo" style="font-style: bold;" value="Fijo">  
+            
+              </div>
           </div>
+          
+          </div>
+          
       
-         
-
-  </label>
+        
   </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
+<!-------------------------menu de empleado-->
 
 <ul class="nav nav-tabs justify-content-center" style="background-color: #EAF2C8;">  
   <li class="nav-item">
-    <a class="nav-link" href="{{ROUTE('admin.gerente.partials.empleado.empleado-actualizarperfil') }}"><i class="fas fa-cogs"></i> Datos Personales</a>
+    <a class="nav-link" href="{{ROUTE('admin.gerente.partials.empleado.empleado-actualizarperfil') }}"><i class="fas fa-cogs fa-spin"></i> Datos Personales</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleado.empleado-nomina') }}"><i class="fas fa-sync"></i> Ingresos-Deducciones</a>
@@ -79,11 +71,7 @@
   <li class="nav-item">
     <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleado.empleado-cargafamiliar') }}"><i class="fas fa-cogs"></i> Carga Familiar</a>
   </li>
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-cogs"></i> Expediente Laboral</a>
-      <div class="dropdown-menu">
-      <a class="dropdown-item" href="{{ ROUTE('admin.gerente.partials.empleado.empleado-oficio') }}">Visualizar</a>
-      <a class="dropdown-item" href="#">Ingresar nuevo oficio</a>
-    </div>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleado.empleado-oficio') }}"><i class="fas fa-cogs fa-spin"></i> Expediente Laboral</a>
   </li>
 </ul>
