@@ -23,6 +23,8 @@ Route::group(['prefix' => 'empleado', 'middleware' => 'auth'], function() {
 	})->name('admin.gerente.partials.empleado.empleado-oficio');
 
 
+
+
 });
 
 

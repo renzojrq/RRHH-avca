@@ -9,7 +9,7 @@
   <div class="card-block">
   <fieldset>
         
-  @include ('admin.gerente.partials.submenu.empleado-datos')
+  @include ('admin.gerente.partials.submenu.empleado-vistas')
   
    
     

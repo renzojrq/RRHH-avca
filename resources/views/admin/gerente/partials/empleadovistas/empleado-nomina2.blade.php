@@ -9,7 +9,7 @@
     <div class="card-block">
       <fielset>
    
-    @include ('admin.gerente.partials.submenu.empleado-datos')
+    @include ('admin.gerente.partials.submenu.empleado-vistas')
   
 
 <div class="row form-group">

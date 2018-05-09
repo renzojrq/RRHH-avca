@@ -11,7 +11,7 @@
 
 
     
-    @include ('admin.gerente.partials.submenu.empleado-datos')
+    @include ('admin.gerente.partials.submenu.empleado-vistas')
     <br>
 
 <!--<h3 style="text-align: center;">Actualizar Carga familiar</h3>-->

@@ -8,7 +8,7 @@
      </div>
     <div class="card-block">
     <fieldset>
-    @include ('admin.gerente.partials.submenu.empleado-datos')
+    @include ('admin.gerente.partials.submenu.empleado-vistas')
     <br>
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oficio" style="float: right; margin-bottom: 10px;"> <i class="fas fa-file-alt"> </i>  Agregar Nuevo Oficio

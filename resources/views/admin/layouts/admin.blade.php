@@ -130,6 +130,8 @@
             Reportes y estadísticas
           </a>
         </li>
+                      
+        <li class="nav-item"><a href="{{ route('admin.gerente.partials.empleadovistas.empleado-nomina2') }}" class="nav-link">vistas empleado</a></li>
       </ul>
     </nav>
   </aside>
