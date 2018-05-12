@@ -10,4 +10,16 @@ class Cargo extends Model
                     protected $table = "cargos";
 
     protected $fillable = ['nombre','perfil_pdf','tabulador_salarial_id'];
+
+
+ 			public function empleados {
+
+                  return $this->hasMany('App\Models\Empleado');
+            }
+
+
+            public function tabulador {
+
+                  return $this->belongsTo('App\Models\TabuladorSalarial');
+            }
 }

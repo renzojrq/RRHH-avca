@@ -18,7 +18,7 @@ class ConceptosTableSeeder extends Seeder
        'tipo_concepto' 	=> '101',
         'descripcion'   	=> 'Sueldo básico',
         'porcentaje'  		=> null,
-        'valor_fijo' 		=> 1000000,
+        'valor_fijo' 		=> null,
         'valor_variable' 	=> null,
         'bono_vacacional'	=> 'si',
         'utilidades'		=> 'si',
@@ -227,7 +227,7 @@ class ConceptosTableSeeder extends Seeder
         [
         'tipo_concepto'     => '510',
         'descripcion'       => 'Descuento de día de ausencia',
-        'porcentaje'        => null,
+        'porcentaje'        => 10, //mientras 
         'valor_fijo'        => null,
         'valor_variable'    => null,
         'bono_vacacional'   => 'no',
@@ -238,7 +238,7 @@ class ConceptosTableSeeder extends Seeder
         [
         'tipo_concepto'     => '512',
         'descripcion'       => 'Descuento por hora de ausencia',
-        'porcentaje'        => null,
+        'porcentaje'        => 10, //mientras
         'valor_fijo'        => null,
         'valor_variable'    => null,
         'bono_vacacional'   => 'no',
