@@ -15,12 +15,8 @@
     
 <br>
 <div class="row">
-<div class="col-md-6">
-      <div class="form-group">
-        {!! Form::label('nombres', 'Nombres') !!}
-        {!! Form::text('nombres', null, ['class' => 'form-control']) !!}
-      </div>
-    </div>
+
+
     <div class="col-md-5">
       <div class="form-group">
         {!! Form::label('foto', 'Foto de perfil') !!}
@@ -63,7 +59,7 @@
       <div class="form-group">
         {!! Form::label('nivel_academico', 'Nivel académico') !!}
         <select name="nivel_academico" id="nivel_academico" class="form-control" @change="obtenerProfesiones"
-                v-model="nivel_academico">
+                v-model="nivel_academico" readonly>
           <option value="" selected="selected">Seleccione</option>
           <option value="bachiller">Bachiller</option>
           <option value="tsu">TSU</option>
@@ -71,19 +67,12 @@
           <option value="especialista 1">Maestría</option>
           <option value="especialista 2">Doctorado</option>
         </select>
-        {{-- {!! Form::select('nivel_academico', [
-            '' => 'Seleccione',
-            'bachiller' => 'Bachiller',
-            'tsu' => 'TSU',
-            'profesional' => 'Profesional',
-            'especialista 1' => 'Especialista 1',
-            'especialista 2' => 'Especialista 2'
-            ], ' ', ['class' => 'form-control']) !!} --}}
+   
 </div> </div>
 <div class="col-md-4">
       <div class="form-group">
         {!! Form::label('profesion', 'Profesión') !!}
-        <select name="profesion" id="profesion" class="form-control" v-model="profesiones">
+        <select name="profesion" id="profesion" class="form-control" v-model="profesiones" readonly>
           @{{ profesiones }}
           <option v-for="profesion in profesiones" :value="profesion.titulo">@{{ profesion.titulo }}</option>
         </select>
@@ -134,6 +123,8 @@
     </div>
   </div>
 
+  
+
   <div class="row align-items-center">
     <div class="col-md-3">
       <div class="form-group">
@@ -142,6 +133,9 @@
         {!! Form::radio('discapacidad', 'no', []) !!} No
       </div>
     </div>
+
+
+
     <div class="col-md-3">
       <div class="form-group">
         {!! Form::label('tipo_discapacidad', 'Tipo de discapacidad') !!}
