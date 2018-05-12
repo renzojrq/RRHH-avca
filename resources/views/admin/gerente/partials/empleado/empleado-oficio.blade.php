@@ -4,13 +4,14 @@
 <div class="container fuente-contenido">
 	<div class="card">
    	 <div class="card-header">
-        <legend>Empleados</legend>
+        <legend>Empleados / Expediente laboral</legend>
      </div>
     <div class="card-block">
+    <fieldset>
     @include ('admin.gerente.partials.submenu.empleado-datos')
     <br>
 
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#convocatoria" style="float: right; margin-bottom: 10px;"> <i class="fas fa-file-alt"> </i>  Agregar Nuevo Oficio
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oficio" style="float: right; margin-bottom: 10px;"> <i class="fas fa-file-alt"> </i>  Agregar Nuevo Oficio
               </button>           
  
 
@@ -64,14 +65,14 @@
 
   </table>
 
+</fieldset>
 
 
 
 
 
-
-<!--ionicio del modal igresar oficio-->
-    <div class="modal fade" id="convocatoria" tabindex="-1" role="dialog" aria-labelledby="convocatoria" aria-hidden="true" class="fondo-modal">
+<!--inicio del modal igresar oficio-->
+    <div class="modal fade" id="oficio" tabindex="-1" role="dialog" aria-labelledby="oficio" aria-hidden="true" class="fondo-modal">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header color-cabecera">

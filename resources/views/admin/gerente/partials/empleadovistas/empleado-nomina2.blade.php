@@ -4,30 +4,30 @@
 <div class="container fuente-contenido">
 	<div class="card">
    	 <div class="card-header">
-        <legend>Empleados / Conceptos a aplicar</legend>
+        <legend>Empleados / Visualizar / Conceptos devengados</legend>
      </div>
     <div class="card-block">
       <fielset>
    
-    @include ('admin.gerente.partials.submenu.empleado-datos')
+    @include ('admin.gerente.partials.submenu.empleado-vistas')
   
 
 <div class="row form-group">
       <div class="col-md-6">
       <h4> Asignaciones</h4>
-		   	  <div class="custom-control custom-checkbox ">
-    				<input type="checkbox" class="custom-control-input" id="sueldobasico" Checked>
-    				<label class="custom-control-label" for="sueldobasico">101  Sueldo Básico</label>
+		   	  <div class="custom-control">
+    				<label class="custom-control-label" for="">101  Sueldo Básico</label>
+
 			    </div>
 
-			    <div class="custom-control custom-checkbox">
-    				<input type="checkbox" class="custom-control-input" id="primaantiguedad" checked>
-    				<label class="custom-control-label" for="primaantiguedad">103 Prima por antigüedad</label>
+			    <div class="custom-control">
+    				
+    				<label class="custom-control-label" for="">103 Prima por antigüedad</label>
 			    </div>
 
-		      <div class="custom-control custom-checkbox">
-    				<input type="checkbox" class="custom-control-input" id="bonoasistencia">
-    				<label class="custom-control-label" for="bonoasistencia">201  Bono por asistencia</label>
+		      <div class="custom-control">
+    			
+    				<label class="custom-control-label" for="">201  Bono por asistencia</label>
 			    </div>
 
 		      <div class="custom-control custom-checkbox">

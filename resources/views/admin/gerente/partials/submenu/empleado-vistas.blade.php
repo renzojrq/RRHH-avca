@@ -63,15 +63,15 @@
 
 <ul class="nav nav-tabs justify-content-center" style="background-color: #EAF2C8;">  
   <li class="nav-item">
-    <a class="nav-link" href="{{ROUTE('admin.gerente.partials.empleado.empleado-actualizarperfil') }}"><i class="fas fa-cogs"></i> Datos Personales</a>
+    <a class="nav-link" href="{{ROUTE('admin.gerente.partials.empleadovistas.empleado-actualizarperfil2') }}"><i class="fas fa-cogs"></i> Datos Personalesv</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleado.empleado-nomina') }}"><i class="fas fa-sync"></i> Ingresos-Deducciones</a>
+    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleadovistas.empleado-nomina2') }}"><i class="fas fa-sync"></i> Ingresos-Deduccionesv</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleado.empleado-cargafamiliar') }}"><i class="fas fa-cogs"></i> Carga Familiar</a>
+    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleadovistas.empleado-cargafamiliar2') }}"><i class="fas fa-cogs"></i> Carga Familiarv</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleado.empleado-oficio') }}"><i class="fas fa-cogs"></i> Expediente Laboral</a>
+    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleadovistas.empleado-oficio2') }}"><i class="fas fa-cogs"></i> Expediente Laboralv</a>
   </li>
 </ul>
