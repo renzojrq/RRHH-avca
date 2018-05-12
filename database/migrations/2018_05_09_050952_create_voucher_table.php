@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEmpleadosConceptosTable extends Migration
+class CreateVoucherTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,22 @@ class CreateEmpleadosConceptosTable extends Migration
      */
     public function up()
     {
-        Schema::create('empleados_conceptos', function (Blueprint $table) {
+        Schema::create('voucher', function (Blueprint $table) {
             $table->increments('id');
 
             $table->integer('empleado_id')->unsigned();
             $table->integer('concepto_id')->unsigned();
-            $table->foreign('empleado_id')->references('id')->on('empleados')->onDelete('cascade');
-            $table->foreign('concepto_id')->references('id')->on('conceptos')->onDelete('cascade');
+            $table->integer('nomina_id')->unsigned();
+            $table->float('monto');
+            $table->date('fecha');
+            
+            
+            $table->foreign('empleado_id')->references('id')->on('empleados');
+            $table->foreign('concepto_id')->references('id')->on('conceptos');
+
+            $table->foreign('nomina_id')->references('id')->on('nominas');
+
+
             $table->timestamps();
         });
     }
@@ -31,6 +40,6 @@ class CreateEmpleadosConceptosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('empleados_conceptos');
+        Schema::dropIfExists('voucher');
     }
 }

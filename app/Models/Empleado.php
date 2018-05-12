@@ -23,21 +23,39 @@ class Empleado extends Model
             'email',
             'password',
             'fecha_nacimiento',
-            'genero'=>'masculino',
-            'estado_civil'=> 'solter@',
-            'nacionalidad'=>'V',
-            'telefono_fijo'=> 02936421817,
-            'telefono_movil'=>04167834720,
-            'cod_empleado'=>123;
-            'condicion_laboral'=>'fijo',
-            'banco'=> 'banesco',
-            'cuenta_bancaria'=>'01340000000000000000',
-            'tipo_empleado' => 'administrativo',
-            'nivel_academico' =>'profesional',
-            'tipo_horario' => 'fijo',
-            'profesion' =>'bachiller',
-            'cargo_id'  => 1,
-            'perfil_id' => 24
-            ]
+            'genero',
+            'estado_civil',
+            'nacionalidad',
+            'telefono_fijo',
+            'telefono_movil',
+            'cod_empleado',
+            'condicion_laboral',
+            'banco',
+            'cuenta_bancaria',
+            'tipo_empleado',
+            'nivel_academico',
+            'tipo_horario',
+            'profesion',
+            'cargo_id',
+            'perfil_id'
+            ];
 
+
+            public function conceptos (){
+                  return $this->belongsToMany('App\Models\Concepto');
+            }
+
+
+            public function cargasfamiliares(){
+              return $this->hasMany('App\Models\Cargafamiliar');
+             }
+
+
+             public function cargo () {
+                  return $this->belongsTo('App\Models\Cargo');
+            }
+
+            public function vouchers(){
+              return $this->hasMany('App\Models\Voucher');
+             }
 }

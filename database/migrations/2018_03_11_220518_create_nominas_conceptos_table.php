@@ -15,11 +15,11 @@ class CreateNominasConceptosTable extends Migration
     {
         Schema::create('nominas_conceptos', function (Blueprint $table) {
             $table->increments('id');
-$table->integer('nomina_id')->unsigned();
+            $table->integer('nomina_id')->unsigned();
             $table->integer('concepto_id')->unsigned();
-            
-            $table->foreign('nomina_id')->references('id')->on('nominas');
+            $table->date('fecha');
 
+            $table->foreign('nomina_id')->references('id')->on('nominas');
             $table->foreign('concepto_id')->references('id')->on('conceptos');
             
             $table->timestamps();

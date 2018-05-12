@@ -41,7 +41,11 @@ class CreateEmpleadosTable extends Migration
             $table->string('profesion');
             $table->integer('cargo_id')->unsigned();
             $table->integer('perfil_id')->unsigned();
-            $table->timestamps();            
+            $table->timestamps();       
+
+            $table->foreign('cargo_id')->references('id')->on('cargos');
+                 
+
         });
     }
 

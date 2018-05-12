@@ -15,8 +15,7 @@ class CreateNominasTable extends Migration
     {
         Schema::create('nominas', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('fecha');
-            $table->enum('tipo',['regular','vacaciones','utilidades','prestaciones','liquidacion','ISL']);
+            $table->enum('tipo',['regular','vacaciones','utilidades','prestaciones','liquidacion','ARC','especial']);
             $table->enum('estatus',['calculada','liquidada']);
             
 

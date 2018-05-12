@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use stdClass;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Models\Empleado;
+use App\Models\Nomina;
+use App\Models\Concepto;
+use App\Models\Voucher;
 
 class NominaController extends Controller
 {
@@ -13,28 +17,37 @@ class NominaController extends Controller
     public function generarnomina() {
 
 		$empleados =  array();
-		$empleado = new stdClass();
-		//$cb=Carbon::parse("00:12:00");
-		//dd($cb->toDateTimeString());
-		$empleado->id=123; 
-		$empleado->fecha_ingreso= "1990-10-01"; 
+		
+		$Mempleado= Empleado::orderBy('nombre')->get();
+		
+		foreach ($Mempleado as $empleado) {
 
-		$empleado->horas_extr_diur = 10;
-		$empleado->horas_falt_diur = 3;
-		$empleado->horas_extr_noct = 6;
-		$empleado->horas_falt_noct = 2;
+			$objempleado = new stdClass();
+			//$cb=Carbon::parse("00:12:00");
+			//dd($cb->toDateTimeString());
+			$objempleado->id=$empleado->id;
+			$objempleado->cargas=$empleado->cargasfamiliares;
+			$objempleado->conceptos=$empleado->conceptos; 
+			$objempleado->fecha_ingreso= "1990-10-01"; 
 
-		$empleado->horas_extr_fer_diur = 4;
-		$empleado->horas_falt_fer_diur = 3;
-		$empleado->horas_extr_fer_noct = 1;
-		$empleado->horas_falt_fer_noct = 0;
+			$objempleado->horas_extr_diur = 10;
+			$objempleado->horas_falt_diur = 3;
+			$objempleado->horas_extr_noct = 6;
+			$objempleado->horas_falt_noct = 2;
 
-		$empleado->horas_diur = 90;
-		$empleado->horas_noct = 70;
-		$empleado->horas_fer_diur = 8;
-		$empleado->horas_fer_noct = 4;
-		array_push($empleados, $empleado);
-    	
+			$objempleado->horas_extr_fer_diur = 4;
+			$objempleado->horas_falt_fer_diur = 3;
+			$objempleado->horas_extr_fer_noct = 1;
+			$objempleado->horas_falt_fer_noct = 0;
+
+			$objempleado->horas_diur = 90;
+			$objempleado->horas_noct = 70;
+			$objempleado->horas_fer_diur = 8;
+			$objempleado->horas_fer_noct = 4;
+			array_push($empleados, $objempleado);
+	    	
+		}
+
     	//logica de calculo
 
 		//calculo antiguedad
@@ -48,22 +61,13 @@ class NominaController extends Controller
 		
 		$sueldo_base =1000;
 
-		$Cantiguedad = new stdClass();
-		
-        $Cantiguedad->tipo_concepto  = 103;
-        $Cantiguedad->descripcion       = "Prima por antigüedad";
-        $Cantiguedad->porcentaje        = 2;
-        $Cantiguedad->valor_fijo        = null;
-        $Cantiguedad->valor_variable    = null;
-        $Cantiguedad->bono_vacacional   = 'si';
-        $Cantiguedad->utilidades        = 'si';
-        $Cantiguedad->prestaciones      = 'si';
-        $Cantiguedad->isl               = 'si';
+		$Cantiguedad = Concepto::buscarCod('103')->first();
 		
 
-//dd($Cantiguedad);
-
+        $nomina = Nomina::tipo('regular')->first();
+        
 		foreach ($empleados as $empleado) {
+// dd($empleado);
 			
 			$aux = Carbon::parse($empleado->fecha_ingreso);
 			$antiguedadmonth = $fecha_actual->diffInMonths($aux); 
@@ -103,18 +107,300 @@ class NominaController extends Controller
 			$asignacion->horasEXdferdu    =  $indice->horasEXdferdu * $empleado->horas_extr_fer_diur; 
 			$asignacion->horasferEXtraNoc    = $indice->horasferEXtraNoc * $empleado->horas_extr_fer_noct;
 
-			dd($asignacion);
 
+			foreach ($empleado->conceptos as $concepto) {
+						
+				if($concepto->verificar($concepto->id,$nomina->id))
+				{ 	
 
+					$result=$this->calculoConcepto($concepto,$empleado->cargas,$fecha_actual,$indice);
 
+					
+					if($result!=null){
 
+					$voucher = new Voucher();
+					$voucher->empleado_id = $empleado->id;
+					$voucher->nomina_id = $nomina->id;
+					$voucher->concepto_id = $concepto->id;
+					$voucher->monto = $result->monto;
+					$voucher->fecha=$fecha_actual;
+					$voucher->save();
+										}
+	
+				}
 
-
+				
+			}
 
 
 
 		}
 
 
+    }
+
+    public function calculoConcepto($concepto, $cargas,$fecha_actual,$indice){
+			$resultado = new stdClass();
+			switch ($concepto->tipo_concepto) {
+				case '101':
+					return null;
+					break;
+				case '103':
+					return null;
+					break;
+				case '105':
+					$cont=0;
+					foreach ($cargas as $carga) {
+						$aux = Carbon::parse($carga->fecha_nacimiento);
+						$month = $fecha_actual->diffInMonths($aux); 
+						$edad = intval($month/12);
+						if($edad<18)
+							$cont++;
+					}
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo*$cont;
+						$resultado->id=$concepto->id;
+					}
+					else{
+						//calculo de Prima por hijos
+						$resultado->monto=$cont*($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					break;
+				case '107':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+
+				break;
+				case '109':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '111':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '113':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '115':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '117':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '119':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+
+				case '121':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '123':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '125':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+
+				case '127':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '129':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					
+				break;
+				case '502':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+				break;
+				case '504':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+				break;
+				case '506':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+				break;
+				case '508':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+				break;
+
+				case '510':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					break;
+					
+					case '512':
+
+					if($concepto->valor_fijo!=null){
+						$resultado->monto=$concepto->valor_fijo;
+						$resultado->id=$concepto->id;
+					}
+ 					
+					else{
+						$resultado->monto=($concepto->porcentaje/100)*$indice->sueldo_basico;
+						$resultado->id=$concepto->id;
+					}
+					break;
+
+			}
+    	return $resultado;
     }
 }
