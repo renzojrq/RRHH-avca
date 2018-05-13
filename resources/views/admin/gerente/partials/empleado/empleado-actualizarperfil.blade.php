@@ -71,14 +71,7 @@
           <option value="especialista 1">Maestría</option>
           <option value="especialista 2">Doctorado</option>
         </select>
-        {{-- {!! Form::select('nivel_academico', [
-            '' => 'Seleccione',
-            'bachiller' => 'Bachiller',
-            'tsu' => 'TSU',
-            'profesional' => 'Profesional',
-            'especialista 1' => 'Especialista 1',
-            'especialista 2' => 'Especialista 2'
-            ], ' ', ['class' => 'form-control']) !!} --}}
+      
 </div> </div>
 <div class="col-md-4">
       <div class="form-group">

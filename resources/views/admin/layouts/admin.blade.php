@@ -100,10 +100,8 @@
           </a>
           <div class="collapse" id="nominaCollapse">
             <ul class="nav pl-3 flex-column">
-              <li class="nav-item"><a href="#" class="nav-link">Cesta ticket</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Especiales</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Regulares</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Pasivos laborales</a></li>
+              <li class="nav-item"><a href="{{route('admin.gerente.partials.nomina.consultarnomina')}}" class="nav-link">Consultar</a></li>
+              <li class="nav-item"><a href="{{route('admin.gerente.partials.nomina.generar')}}" class="nav-link">Generar</a></li> 
             </ul>
           </div>
         </li>
