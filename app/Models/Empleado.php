@@ -58,4 +58,6 @@ class Empleado extends Model
             public function vouchers(){
               return $this->hasMany('App\Models\Voucher');
              }
+
+             
 }

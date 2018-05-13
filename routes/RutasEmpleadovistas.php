@@ -6,6 +6,8 @@ Route::group(['prefix' => 'empleadovistas', 'middleware' => 'auth'], function() 
     	return view('admin.gerente.partials.empleadovistas.empleado-nomina2');
     })->name('admin.gerente.partials.empleadovistas.empleado-nomina2');
     
+    Route::get('/consulta', 'EmpleadoController@consultavoucher')->name('consulta.voucher');
+
     Route::get('/constancias', function () {
     	return view('admin.gerente.partials.empleadovistas.empleado-constancias2');
     })->name('admin.gerente.partials.empleadovistas.empleado-constancias2');

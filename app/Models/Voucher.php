@@ -9,7 +9,7 @@ class Voucher extends Model
     //
          protected $table = "voucher";
 
-    protected $fillable = ['empleado_id','concepto_id','nomina_id'];
+    protected $fillable = ['empleado_id','concepto_id','nomina_id','monto','fecha'];
 
     public function empleado (){
     	return $this->belongsTo('App\Models\Empleado');
@@ -22,4 +22,13 @@ class Voucher extends Model
     public function concepto (){
     	return $this->belongsTo('App\Models\Concepto');
     }
+
+
+    
+
+
+
+    
+
+
 }

@@ -122,6 +122,13 @@
 <button type="submit" class="btn btn-primary" style="text-align: center;">Guardar</button>  
 
 </footer>
+
+
+<div>
+
+  <a href="{{ route('consulta.voucher')  }}" class="btn btn-primary">consulta</a>
+</div> 
+
 <!--</div>-->
 
 

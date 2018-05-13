@@ -9,6 +9,8 @@ use App\Models\TabuladorSalarial;
 use Illuminate\Http\Request;
 use App\Models\Profesion;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\db;
+
 
 class EmpleadoController extends Controller
 {
@@ -59,4 +61,26 @@ class EmpleadoController extends Controller
         $tabulador = TabuladorSalarial::where('id', $request->tabulador_salarial_id)->get();
         return response()->json($tabulador);
     }
+
+
+
+    public function consultavoucher(){
+
+
+        $nomina_id = 1;
+        $empleado_id =1;
+        $fecha = "2018-05-13";
+
+
+    $user = DB::table('voucher')->select('concepto_id','monto')->where('empleado_id', '=', $empleado_id)->get();
+
+
+        $user = DB::table('voucher')
+                    ->join('conceptos', 'voucher.concepto_id', '=','conceptos.id')
+        ->select('conceptos.descripcion','voucher.monto','voucher.fecha')->where('empleado_id', '=', $empleado_id)->where('fecha', '=', $fecha)->get();
+
+    dd($user);
+
+        }
+
 }
