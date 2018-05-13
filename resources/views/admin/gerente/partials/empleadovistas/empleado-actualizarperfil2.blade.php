@@ -122,9 +122,6 @@
       </div>
     </div>
   </div>
-
-  
-
   <div class="row align-items-center">
     <div class="col-md-3">
       <div class="form-group">
@@ -133,9 +130,6 @@
         {!! Form::radio('discapacidad', 'no', []) !!} No
       </div>
     </div>
-
-
-
     <div class="col-md-3">
       <div class="form-group">
         {!! Form::label('tipo_discapacidad', 'Tipo de discapacidad') !!}
@@ -152,8 +146,7 @@
 </div>
 </fieldset>
 <div class="margin-center">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#convocatoria" style="float: center; margin-bottom: 10px;"> <i class="fas fa-sync"> </i>  Actualizar Datos
-              </button>    
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#convocatoria" style="float: center; margin-bottom: 10px;"> <i class="fas fa-sync"> </i>  Actualizar Datos </button>    
 </div>
   
 

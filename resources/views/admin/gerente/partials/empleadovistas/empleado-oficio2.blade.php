@@ -10,7 +10,7 @@
     <fieldset>
     @include ('admin.gerente.partials.submenu.empleado-vistas') 
  
-
+<br>
   <table class="table-hover table-sm table-bordered" style="clear: both;">
                 <thead class="thead-light thead-label-sm">
                   <tr>

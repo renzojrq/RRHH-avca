@@ -63,10 +63,10 @@
 
 <ul class="nav nav-tabs justify-content-center" style="background-color: #EAF2C8;">  
   <li class="nav-item">
-    <a class="nav-link" href="{{ROUTE('admin.gerente.partials.empleadovistas.empleado-actualizarperfil2') }}"><i class="fas fa-cogs"></i> Datos Personalesv</a>
+    <a class="nav-link" href="{{ROUTE('admin.gerente.partials.empleadovistas.empleado-actualizarperfil2') }}"><i class="fas fa-cogs"></i> Actualizar datos de personal</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleadovistas.empleado-nomina2') }}"><i class="fas fa-sync"></i> Ingresos-Deduccionesv</a>
+    <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleadovistas.empleado-nomina2') }}"><i class="fas fa-sync"></i> Voucher de pago</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="{{ ROUTE('admin.gerente.partials.empleadovistas.empleado-cargafamiliar2') }}"><i class="fas fa-cogs"></i> Carga Familiarv</a>
