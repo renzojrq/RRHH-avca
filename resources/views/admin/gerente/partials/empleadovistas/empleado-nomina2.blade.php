@@ -147,6 +147,34 @@
                    </tbody>
   </table>
 <hr>
+
+ <table class="table-hover" style="clear: both;">
+                <thead class="thead-light thead-label-sm">
+                  <tr>
+                                   
+                    <th class="col-md-4 ">Cesta Ticket</th>
+                    <th class="col-md-1 text-sm-center">Monto</th>
+                    <th class="col-md-1 text-sm-center"></th>
+                    <th class="col-md-1 text-sm-right align-middle"></th>
+                    <th class="col-md-1 text-sm-right align-middle">días descontados</th>
+                    <th class="col-md-1 text-sm-right align-middle"></th>                    
+                    <th class="col-md-1 text-sm-right align-middle"></th>
+                   </tr>
+                </thead>
+                <tbody class="tbody-label-sm">
+                  <tr>
+                    <td class="align-middle text-sm-left"></td>
+                    <td class="align-middle">155000 Bs</td>
+                    <td class="align-middle"></td>
+                    <td class="align-middle"></td>
+                    <td class="align-middle text-sm-right">2</td>
+                    <td class="align-middle">140000</td>
+                    <td class="align-middle"></td>
+                  </tr>
+                 
+           </tbody>
+           </table>
+          <hr> 
 <footer>
 <button type="submit" class="btn btn-primary" style="text-align: center;">Imprimir</button>  
 

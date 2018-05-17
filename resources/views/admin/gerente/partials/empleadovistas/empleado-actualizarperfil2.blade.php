@@ -1,19 +1,29 @@
 @extends('admin.layouts.admin')
 
 @section('content')
+
+
+
+
+
 <div class="container fuente-contenido">
 	<div class="card">
    	 <div class="card-header">
-      <legend>Empleados / Actualizar datos personales</legend>
+      <legend>Empleado / Actualizar Perfil</legend>
      </div>
   <div class="card-block">
   <fieldset>
         
   @include ('admin.gerente.partials.submenu.empleado-vistas')
   
+<div class="container justify-content-center" style="background-color: #F5F9FF;">
+ <!-- <H3>Empleado a consultar</H3>-->
+  
+
    
     
 <br>
+
 <div class="row">
 
 
@@ -22,84 +32,41 @@
         {!! Form::label('foto', 'Foto de perfil') !!}
         {!! Form::file('foto', ['class' => 'form-control']) !!}
       </div>
-</div>
+    </div>
 
 </div>
-  <div class="row">
-    <div class="col-md-2">
-      <div class="form-group">
-        {!! Form::label('estado_civil', 'Estado civil', []) !!}
-        {!! Form::select('estado_civil', [
-            '' => 'Seleccione',
-            'solter@' => 'Solter@',
-            'casad@' => 'Casad@',
-            'divorciad@' => 'Divorciad@',
-            'concubin@' => 'Concubin@',
-            'viud@' => 'Viud@',
-            ], ' ', ['class' => 'form-control']) !!}
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="form-group">
-        {!! Form::label('fecha_nacimiento', 'Fecha de nacimiento') !!} <i class="fas fa-calendar"></i>
-        {!! Form::date('fecha_nacimiento', null, ['class' => 'form-control']) !!}
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        {!! Form::label('genero', 'Sexo: ') !!} <br>
-        {!! Form::radio('genero', 'femenino', false, []) !!} <i class="fas fa-female fa-lg"></i>
-        {!! Form::radio('genero', 'masculino', false, []) !!} <i class="fas fa-male fa-lg"></i>
-      </div>
-    </div>
-</div>
-<div class="row">
-
-    <div class="col-md-2">
-      <div class="form-group">
-        {!! Form::label('nivel_academico', 'Nivel académico') !!}
-        <select name="nivel_academico" id="nivel_academico" class="form-control" @change="obtenerProfesiones"
-                v-model="nivel_academico" readonly>
-          <option value="" selected="selected">Seleccione</option>
-          <option value="bachiller">Bachiller</option>
-          <option value="tsu">TSU</option>
-          <option value="profesional">Universitario</option>
-          <option value="especialista 1">Maestría</option>
-          <option value="especialista 2">Doctorado</option>
-        </select>
-   
-</div> </div>
-<div class="col-md-4">
-      <div class="form-group">
-        {!! Form::label('profesion', 'Profesión') !!}
-        <select name="profesion" id="profesion" class="form-control" v-model="profesiones" readonly>
-          @{{ profesiones }}
-          <option v-for="profesion in profesiones" :value="profesion.titulo">@{{ profesion.titulo }}</option>
-        </select>
-      </div>
-    </div>
-  </div>
 
 <div class="row">
-    <div class="col-md-2">
-      <div class="form-group">
-        {!! Form::label('estado', 'Estado') !!}
-        {!! Form::select('estado', [], [], ['class' => 'form-control']) !!}
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        {!! Form::label('ciudad', 'Ciudad') !!}
-        {!! Form::select('ciudad', [], [], ['class' => 'form-control']) !!}
-      </div>
-    </div>
+
+<fieldset>
+<legend>Actualizar Contraseña</legend>
+    <div class="form-group">
+
+    <label>Contraseña actual</label> 
+    <input type="password" name="" value=""> 
+
+    <label>Nueva contraseña</label>
+    <input type="password" name="" value=""> 
+
+
+    <label>Confirmar nueva contraseña</label>
+    <input type="password" name="" value="">
+
+</fieldset>
+</div>
+</div>
+</div>
+
+  
+<div class="row">
+  
 
     <div class="col-md-7">
       <div class="form-group">
         {!! Form::label('direccion', 'Dirección local') !!}
         {!! Form::text('direccion', null, ['class' => 'form-control']) !!}
       </div>
-    </div>
+  </div>    
   </div>
 
   <div class="row">
@@ -115,34 +82,14 @@
         {!! Form::text('telefono_movil', null, ['class' => 'form-control']) !!}
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-5">
       <div class="form-group">
         {!! Form::label('email', 'Correo electrónico', []) !!}
         {!! Form::email('email', null, ['class' => 'form-control']) !!}
       </div>
     </div>
   </div>
-  <div class="row align-items-center">
-    <div class="col-md-3">
-      <div class="form-group">
-        {!! Form::label('discapacidad', '¿Posee alguna discapacidad?') !!} <br>
-        {!! Form::radio('discapacidad', 'si', []) !!} Si
-        {!! Form::radio('discapacidad', 'no', []) !!} No
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="form-group">
-        {!! Form::label('tipo_discapacidad', 'Tipo de discapacidad') !!}
-        {!! Form::select('tipo_discapacidad', [
-            ''                               => 'Seleccione',
-            'trastornos de habla y lenguaje' => 'Trastornos de habla y lenguaje',
-            'visual'                         => 'Visual',
-            'motriz'                         => 'Motriz',
-            'auditiva'                       => 'Auditiva'
-            ], '', ['class' => 'form-control']) !!}
-      </div>
-    </div>      </div>
-
+  
 </div>
 </fieldset>
 <div class="margin-center">
