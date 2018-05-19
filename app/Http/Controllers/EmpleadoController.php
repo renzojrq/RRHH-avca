@@ -75,11 +75,13 @@ class EmpleadoController extends Controller
     $user = DB::table('voucher')->select('concepto_id','monto')->where('empleado_id', '=', $empleado_id)->get();
 
 
-        $user = DB::table('voucher')
+        $users = DB::table('voucher')
                     ->join('conceptos', 'voucher.concepto_id', '=','conceptos.id')
         ->select('conceptos.descripcion','voucher.monto','voucher.fecha')->where('empleado_id', '=', $empleado_id)->where('fecha', '=', $fecha)->get();
 
-    dd($user);
+    
+//dd($users);
+    return view('admin.gerente.partials.empleadovistas.mostrar')->with('users',$users);
 
         }
 

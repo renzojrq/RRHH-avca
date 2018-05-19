@@ -24,6 +24,9 @@ Route::group(['prefix' => 'empleadovistas', 'middleware' => 'auth'], function() 
     	return view('admin.gerente.partials.empleadovistas.empleado-oficio2');
 	})->name('admin.gerente.partials.empleadovistas.empleado-oficio2');
 
+    Route::get('voucher', function () {
+        return view('admin.gerente.partials.empleadovistas.mostrar');
+    })->name('admin.gerente.partials.empleadovistas.mostrar');
 
 
 

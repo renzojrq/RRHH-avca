@@ -15,9 +15,21 @@ class CreateAsistenciasTable extends Migration
     {
         Schema::create('asistencias', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('fecha');
-            $table->time('hora_entrada');
-            $table->time('hora_salida');
+            
+            $table->integer('h_extras_diurnas');
+            $table->integer('h_faltantes_diurnas');
+            $table->integer('h_extras_nocturnas');
+            $table->integer('h_faltantes_nocturnas');
+
+            $table->integer('f_h_extras_diurnas');
+            $table->integer('f_h_faltantes_diurnas');
+            $table->integer('f_h_extras_nocturnas');
+            $table->integer('f_h_faltantes_nocturnas');
+
+            $table->integer('empleado_id')->unsigned();
+
+            $table->foreign('empleado_id')->references('id')->on('empleados');
+
             $table->timestamps();
         });
     }

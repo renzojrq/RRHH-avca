@@ -130,6 +130,13 @@
         </li>
                       
         <li class="nav-item"><a href="{{ route('admin.gerente.partials.empleadovistas.empleado-nomina2') }}" class="nav-link">vistas empleado</a></li>
+
+
+        <li class="nav-item">
+          <a class="nav-link"  href="{{ route ('admin.gerente.partials.asistencia.carga-asistencia') }}" role="button">
+            <i class="fas fa-user"></i> Asistencia</i>
+          </a>                  
+        </li>
       </ul>
     </nav>
   </aside>

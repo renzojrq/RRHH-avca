@@ -39,19 +39,8 @@
             ], ' ', ['class' => 'form-control']) !!}
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="form-group">
-        {!! Form::label('fecha_nacimiento', 'Fecha de nacimiento') !!} <i class="fas fa-calendar"></i>
-        {!! Form::date('fecha_nacimiento', null, ['class' => 'form-control']) !!}
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-group">
-        {!! Form::label('genero', 'Sexo: ') !!} <br>
-        {!! Form::radio('genero', 'femenino', false, []) !!} <i class="fas fa-female fa-lg"></i>
-        {!! Form::radio('genero', 'masculino', false, []) !!} <i class="fas fa-male fa-lg"></i>
-      </div>
-    </div>
+   
+   
 </div>
 <div class="row">
 

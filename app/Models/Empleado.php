@@ -59,5 +59,8 @@ class Empleado extends Model
               return $this->hasMany('App\Models\Voucher');
              }
 
+             public function asistencias(){
+              return $this->hasMany('App\Models\Asistencia');
+             }
              
 }
