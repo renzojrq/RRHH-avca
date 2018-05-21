@@ -4,23 +4,118 @@
 <div class="container fuente-contenido">
 	<div class="card">
    	 <div class="card-header">
-        <legend>Aspirantes</legend>
+        <legend>Vacantes Activas</legend>
      </div>
     <div class="card-block">
 
+<!-- <div class="dropdown show">-->
+<div class="container" style="background-color: #CAD7F8">
+<h3>Filtrar vacantes por:</h3>
+<div class="form-inline">
+  <div class="input-group mb-3 col-md-4">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="font-weight: bold;" id="basic-addon2">Sucursal</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Buscar en Sucursal" aria-label="Username" aria-describedby="basic-addon2" list="lista-sucursal"/>  
+  </div>
 
+  <div class="input-group mb-3 col-md-4">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="font-weight: bold;" id="basic-addon2">Área</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Buscar en Área" aria-label="Username" aria-describedby="basic-addon2" list="lista-area"/>  
+  </div>
 
-  
-	  @include ('admin.gerente.partials.submenu.seleccion-gerente')
+  <div class="input-group mb-3 col-md-4">
+  <div class="input-group-prepend">
+    <span class="input-group-text" style="font-weight: bold;" id="basic-addon2">Cargo</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Buscar en Cargo" aria-label="Username" aria-describedby="basic-addon2" list="lista-cargos"/>  
+  </div>
+
+<datalist id="lista-cargos">
+  <option>Apoyo de asuntos Legales</option>
+  <option>Técnico de Refrigeración</option>
+  <option>Archivista</option>
+  <option>Analísta de Nómina</option>
+  <option>Secretaria Ejecutiva</option>
+  <option>Administrador de Empresas</option>
+  <option>Magister en RRHH</option>
+  <option>Recepcionista</option>
+  <option>Agente de Tráfico</option>
+  <option>Supervisor de Rampa</option>
+  <option>Director de Logística</option>
+  <option>Director de Marketing</option>
+  <option>Mecánico</option> 
+</datalist>
+
+<datalist id="lista-sucursal">
+    <option>Antonio José de Sucre</option>
+    <option>José Antonio Anzoátegui</option>
+    <option>La Chinita</option>
+    <option>Arturo Michelena</option>
+    <option>Manuel Piar</option>
+    <option>Jacinto Lara</option>
+    <option>Juan Pablo Pérez Alfonso</option>
+    <option>José Tadeo Monagas</option>
+    <option>Santiago Mariño</option>
+    <option>Simón Bolívar</option>
+    <option>Cacique Arame</option>
+    <option>Don Edmundo Barrios</option>
+    <option>Las Flecheras</option>
+    <option>Luisa Caceres de Arismendi</option>
+    <option>Tomas de Heres</option>
+    <option>Josefa Camejo</option>
+  </datalist>
+
+  <datalist id="lista-area">
+    <option>Operacional</option>
+    <option>Administrativa</option>
+    <option>Telemática</option>
+    <option>Oficina</option>
+    <option>Tripulación</option>
+    <option>Logística</option>
+  </datalist>
+</div>
+</div>
+
+	
     <br>
-    <div class="text-lg-center" style="font-weight: bold;">Aspirantes Registrados 
-      </div>
+    <div class="text-lg-center" style="font-weight: bold;">Vacantes</div>
       <br>
     
     <div class="margin-center col-md-8">
        
     <div class="w3-responsive" >
-	  <table class="w3-table-all w3-small w3-border " style="clear: both;">
+
+
+
+<table class="table table-striped category-table">
+              <thead>
+              <tr>
+                <th>Cargo</th>
+                <th>Sucursal</th>
+                <th>Fecha de publicación</th>
+                <th>&nbsp;</th>
+              </tr>
+              </thead>
+              <tbody>
+              @foreach($vacantes as $vacante)
+                <tr>
+                  <td class="text-capitalize">{{ $vacante->titulo }}</td>
+                  <td>{{ $vacante->nombre }}</td>
+                  <td>{{ Carbon\Carbon::parse($vacante->fecha_publicacion)->format('d/m/Y')  }}</td>
+                  <td>
+                    <a href="{{ route('perfil.show', [$vacante->vacante_id, $vacante->cargo_id]) }}" class="btn btn-info btn-sm text-white">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </td>
+                </tr>
+              @endforeach
+              </tbody>
+            </table>
+    
+	<!--  <table class="w3-table-all w3-small w3-border " style="clear: both;">
                 <thead class="thead-light  thead-label-sm">
                   <tr>
                     <th class="align-middle w3-light-gray col-md-1 w3-border">Fecha</th>
@@ -76,7 +171,9 @@
 
                   </tr>
                 </tbody>
-              </table>
+              </table>-->
+<p>Aquí va el listado de vacantes activas cada una con un enlace que lleve a sus respectivos aspirantes</p>
+
         </div>
   </div></div>
 	</div>

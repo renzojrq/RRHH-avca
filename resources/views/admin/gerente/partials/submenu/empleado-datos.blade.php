@@ -20,47 +20,6 @@
           
 
 
-          <div class="margin-center col-md-8">
-                <div class="table-responsive" >
-                    <table class="table-hover table-sm table-bordered col" style="clear: both;">
-                                <thead class="thead-light thead-label-sm">
-                                    <tr>
-                                        <th class="col-md-1">Fecha</th>
-                                        <th class="col-md-5">Reconocimiento</th>
-                                        <th class="col-md-2">...</th>
-                                        <th class="col-md-2">...</th>
-                                        
-                                    </tr>
-                                </thead>
-
-                                <tbody class="tbody-label-sm">
-                                    <tr>
-                                        <td class="align-middle">Nombre: Renzo José Rojas Quezada</td>
-                                        <td class="align-middle">C.I. 20156987</td>
-                                        <td>Sucursal: Caribean Riber</td>
-                                        <td>Cargo: Backend nivel aprendiz</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">Fecha de Ingreso: 10/10/2017</td>
-                                        <td class="align-middle">Condicón Laboral: Suplente</td>
-                                        <td>Departamento: Temeinformática</td>
-                                        <td>...</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">20/12/2017</td>
-                                        <td class="align-middle">empleado del mes</td>
-                                        <td>...</td>
-                                        <td>...</td>
-                                    </tr>
-
-                                </tbody>
-                    </table>
-                </div>
-            </div>
-
-
-
-
 
 
 
@@ -70,7 +29,7 @@
           </div>            <!-- <div class="input-group">-->
           
 
-          <div class="col-md">
+        <div class="col-md">
               <div class="form-inline form-group"> 
                   <label class="col-md-1" style="font-style: bold">Nombre:</label>
                   <input type="text" readonly class="form-control-plaintext col-md-4" style="font-style: italic;" value="Palomino Vergara de la Trinidad">

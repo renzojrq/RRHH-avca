@@ -38,6 +38,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
      require "Rutasreclutamiento.php";
      require "RutasExpediente.php";
      require "RutasEmpleadovistas.php";
+        require "RutasGerente.php";
 
     
 });

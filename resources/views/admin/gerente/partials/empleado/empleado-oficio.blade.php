@@ -11,7 +11,7 @@
     @include ('admin.gerente.partials.submenu.empleado-datos')
     <br>
 
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oficio" style="float: right; margin-bottom: 10px;"> <i class="fas fa-file-alt"> </i>  Agregar Nuevo Oficio
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oficio" style="float: right; margin-bottom: 10px;"> <i class="fas fa-file-alt"> </i>  Agregar Incidencia
               </button>           
  
 
@@ -19,10 +19,10 @@
   <table class="table-hover table-sm table-bordered" style="clear: both;">
                 <thead class="thead-light thead-label-sm">
                   <tr>
-                    <th class="col-md-2">N° Oficio</th>
-                    <th class="col-md-1">F. de Oficio</th>
-                    <th class="col-md-2 text-sm-center align-middle">Tipo de Oficio</th>
-                    <th class="col-md-2 text-sm-center align-middle">SubTipo de Oficio</th>
+                    <!--<th class="col-md-2">N° Oficio</th>-->
+                    <th class="col-md-1">Fecha</th>
+                    <th class="col-md-2 text-sm-center align-middle">Tipo de Incidencia</th>
+                    <th class="col-md-2 text-sm-center align-middle">Incidencia</th>
                     <th class="col-md-1 text-sm-center align-middle">F.Inicio</th>
                     <th class="col-md-1 text-sm-center align-middle">F.Finalización</th>
                     <th class="col-md text-sm-center align-middle">Descripción</th>
@@ -31,7 +31,7 @@
                 </thead>
                 <tbody class="tbody-label-sm">
                   <tr>
-                    <td class="align-middle">RRHH-AVCA_050-2017</td>
+                    <!--<td class="align-middle">RRHH-AVCA_050-2017</td>-->
                     <td class="align-middle">05/05/2017</td>
                     <td class="align-middle">Reconocimiento</td>
                     <td class="align-middle">Empleado del Mes</td>
@@ -41,7 +41,7 @@
                     <td class="align-middle text-md-center"><i class="fas fa-file-pdf fa-lg"></i></td>
                   </tr>
                     <tr>
-                    <td class="align-middle">RRHH-AVCA_025-2017</td>
+                    <!--<td class="align-middle">RRHH-AVCA_025-2017</td>-->
                     <td class="align-middle">10/05/2017</td>
                     <td class="align-middle">Formación</td>
                     <td class="align-middle">Consignación de título</td>
@@ -51,7 +51,7 @@
                     <td class="align-middle text-md-center"><i class="fas fa-file-pdf fa-lg"></i></td>
                   </tr>
                     <tr>
-                    <td class="align-middle">RRHH-AVCA_022-2016</td>
+                    <!--<td class="align-middle">RRHH-AVCA_022-2016</td>-->
                     <td class="align-middle">10/10/2016</td>
                     <td class="align-middle">Licencia</td>
                     <td class="align-middle">Vacaciones</td>
@@ -76,7 +76,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header color-cabecera">
-              <h5 class="modal-title" id="titulo">Agregar Oficio</h5>
+              <h5 class="modal-title" id="titulo">Agregar Incidencia</h5>
 
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -88,17 +88,12 @@
             
 {!! Form::open() !!}
 
- <div class="col-md-6 margin-center">
-      <div class="form-group">
-        {!! Form::label('noficio', 'Número de oficio') !!}
-        {!! Form::text('descripcion', null, ['class' => 'form-control']) !!}
-      </div>
-    </div>
+
 <div class="row form-group">
    
 
 <div class="col-md-6">
-      {!! Form::label('tipo oficio', 'Tipo Oficio') !!}
+      {!! Form::label('tipo oficio', 'Tipo Incidencia') !!}
       {!! Form::select('tipo_oficio', [
           '' => 'seleccione',
           'Amonestacion' => 'Amonestación',
@@ -112,7 +107,7 @@
     </div>
 
     <div class="col-md-6">
-      {!! Form::label('Subtipo', 'Subtipo') !!}
+      {!! Form::label('Subtipo', 'Incidencia') !!}
       {!! Form::select('subtipo', [
           '' => 'seleccione',
           'verbal' => 'Verbal',
@@ -121,6 +116,12 @@
     </div>
 
 </div>
+<!-- <div class="col-md-6">
+      <div class="form-group">
+        {!! Form::label('noficio', 'Número de oficio') !!}
+        {!! Form::text('descripcion', null, ['class' => 'form-control']) !!}
+      </div>
+    </div> -->
   <!--<H3 class="text-center">Cargar oficios</H3>-->
  
  <div class="row form-group">

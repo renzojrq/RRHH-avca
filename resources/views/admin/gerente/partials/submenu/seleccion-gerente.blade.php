@@ -3,7 +3,7 @@
 
 <!-- <div class="dropdown show">-->
 <div class="container" style="background-color: #CAD7F8">
-<h3>Vacante a consultar</h3>
+<h3>Filtrar vacantes por:</h3>
 <div class="form-inline">
   <div class="input-group mb-3 col-md-4">
   <div class="input-group-prepend">

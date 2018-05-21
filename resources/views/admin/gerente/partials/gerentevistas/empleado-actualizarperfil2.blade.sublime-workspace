@@ -1,0 +1,1297 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"le",
+				"legend\tTag"
+			],
+			[
+				"form",
+				"form-group \tBootstrap 4 Class"
+			],
+			[
+				"col-s",
+				"col-sm-2 \tBootstrap 4 Class"
+			],
+			[
+				"col-md",
+				"col-md-3 \tBootstrap 4 Class"
+			],
+			[
+				"ali",
+				"align-content-around \tBootstrap 4 Class"
+			],
+			[
+				"s",
+				"span\t<span>"
+			],
+			[
+				"font",
+				"font-size-adjust"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"text-s",
+				"text-sm-center \tBootstrap 4 Class"
+			],
+			[
+				"te",
+				"text-sm-center \tBootstrap 4 Class"
+			],
+			[
+				"ju",
+				"justify-content-end \tBootstrap 4 Class"
+			],
+			[
+				"h",
+				"hr\t<hr>"
+			],
+			[
+				"tex",
+				"text-sm-center \tBootstrap 4 Class"
+			],
+			[
+				"fon",
+				"font-size-adjust"
+			],
+			[
+				"di",
+				"disabled\tAttr"
+			],
+			[
+				"flex-ro",
+				"flex-sm-row \tBootstrap 4 Class"
+			],
+			[
+				"ro",
+				"row \tBootstrap 4 Class"
+			],
+			[
+				"text",
+				"textarea\t<textarea>"
+			],
+			[
+				"for",
+				"form-inline \tBootstrap 4 Class"
+			],
+			[
+				"col-m",
+				"col-md-1 \tBootstrap 4 Class"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"al",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"btn",
+				"btn-primary \tBootstrap 4 Class"
+			],
+			[
+				"b",
+				"button\t<button>"
+			],
+			[
+				"lin",
+				"links\tlink - search"
+			],
+			[
+				"li",
+				"links\tlink - search"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"a",
+				"align-top \tBootstrap 4 Class"
+			],
+			[
+				"just",
+				"justify-content-sm-around \tBootstrap 4 Class"
+			],
+			[
+				"jus",
+				"justify-content-around \tBootstrap 4 Class"
+			],
+			[
+				"col-md-",
+				"col-md-10 \tBootstrap 4 Class"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"aling",
+				"align-content-sm-start \tBootstrap 4 Class"
+			],
+			[
+				"align-cont",
+				"align-content-md-center \tBootstrap 4 Class"
+			],
+			[
+				"conta",
+				"container \tBootstrap 4 Class"
+			],
+			[
+				"mar",
+				"align-content-md-around \tBootstrap 4 Class"
+			],
+			[
+				"align-content-en",
+				"align-content-md-end \tBootstrap 4 Class"
+			],
+			[
+				"aling-",
+				"align-items-start \tBootstrap 4 Class"
+			],
+			[
+				"aling-se",
+				"align-self-start \tBootstrap 4 Class"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"area",
+				"area_id"
+			],
+			[
+				"f",
+				"font-style"
+			],
+			[
+				"im",
+				"img\tTag"
+			],
+			[
+				"btn-out",
+				"btn-outline-info \tBootstrap 4 Class"
+			],
+			[
+				"input",
+				"input-group \tBootstrap 4 Class"
+			],
+			[
+				"in",
+				"input-group \tBootstrap 4 Class"
+			],
+			[
+				"form-c",
+				"form-control \tBootstrap 4 Class"
+			],
+			[
+				"bg",
+				"bg-primary \tBootstrap 4 Class"
+			],
+			[
+				"contei",
+				"container \tBootstrap 4 Class"
+			],
+			[
+				"col",
+				"col-12 \tBootstrap 4 Class"
+			],
+			[
+				"st",
+				"style\t<style>"
+			],
+			[
+				"bo",
+				"border-style"
+			],
+			[
+				"fi",
+				"fieldset\t<fieldset>"
+			],
+			[
+				"form-contr",
+				"form-control \tBootstrap 4 Class"
+			],
+			[
+				"inpu",
+				"input-group \tBootstrap 4 Class"
+			],
+			[
+				"input-",
+				"input-group-addon \tBootstrap 4 Class"
+			],
+			[
+				"bg-",
+				"bg-info \tBootstrap 4 Class"
+			],
+			[
+				"form-l",
+				"form-inline \tBootstrap 4 Class"
+			],
+			[
+				"fom-",
+				"form-inline \tBootstrap 4 Class"
+			],
+			[
+				"bg-de",
+				"badge-default \tBootstrap 4 Class"
+			],
+			[
+				"dan",
+				"bg-danger \tBootstrap 4 Class"
+			],
+			[
+				"inli",
+				"form-inline \tBootstrap 4 Class"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"btn-l",
+				"btn-link \tBootstrap 4 Class"
+			],
+			[
+				"bt",
+				"btn-primary \tBootstrap 4 Class"
+			],
+			[
+				"btn-primar",
+				"btn-outline-primary \tBootstrap 4 Class"
+			],
+			[
+				"col-",
+				"col-10 \tBootstrap 4 Class"
+			],
+			[
+				"style",
+				"style\tAttr"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"text-center",
+				"text-xl-center \tBootstrap 4 Class"
+			],
+			[
+				"j",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
+				"form-in",
+				"form-inline \tBootstrap 4 Class"
+			],
+			[
+				"col-sm",
+				"col-sm-2 \tBootstrap 4 Class"
+			],
+			[
+				"inl",
+				"form-inline \tBootstrap 4 Class"
+			],
+			[
+				"align",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"nav-t",
+				"navbar-toggler \tBootstrap 4 Class"
+			],
+			[
+				"all",
+				"align-content-xl-center \tBootstrap 4 Class"
+			],
+			[
+				"alli",
+				"align-middle \tBootstrap 4 Class"
+			],
+			[
+				"alin",
+				"align-bottom \tBootstrap 4 Class"
+			],
+			[
+				"btn-ou",
+				"btn-outline-info \tBootstrap 4 Class"
+			],
+			[
+				"p-",
+				"p-3 \tBootstrap 4 Class"
+			],
+			[
+				"mb",
+				"mb-3 \tBootstrap 4 Class"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"cont",
+				"container-fluid \tBootstrap 4 Class"
+			],
+			[
+				"tab",
+				"table-responsive \tBootstrap 4 Class"
+			],
+			[
+				"alig",
+				"align-content-sm-center \tBootstrap 4 Class"
+			],
+			[
+				"t",
+				"text-sm-center \tBootstrap 4 Class"
+			],
+			[
+				"table",
+				"table-sm \tBootstrap 4 Class"
+			],
+			[
+				"con",
+				"form-control-lg \tBootstrap 4 Class"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"my",
+				"my-2 \tBootstrap 4 Class"
+			],
+			[
+				"mt",
+				"mt-2 \tBootstrap 4 Class"
+			],
+			[
+				"form-che",
+				"form-check-inline \tBootstrap 4 Class"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"checked",
+				"checked\tAttr"
+			],
+			[
+				"form-chec",
+				"form-check-inline \tBootstrap 4 Class"
+			],
+			[
+				"ce",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"modal-",
+				"modal-sm \tBootstrap 4 Class"
+			],
+			[
+				"form-gr",
+				"form-group \tBootstrap 4 Class"
+			],
+			[
+				"cen",
+				"justify-content-lg-end \tBootstrap 4 Class"
+			],
+			[
+				"boo",
+				"align-bottom \tBootstrap 4 Class"
+			],
+			[
+				"modal",
+				"modal-footer \tBootstrap 4 Class"
+			],
+			[
+				"div",
+				"div\t<div>"
+			],
+			[
+				"form-g",
+				"form-group \tBootstrap 4 Class"
+			],
+			[
+				"i",
+				"inputn\tinput - number"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"btn-",
+				"btn-danger \tBootstrap 4 Class"
+			],
+			[
+				"font-si",
+				"font-size"
+			],
+			[
+				"sob",
+				"sobrecargos"
+			],
+			[
+				"so",
+				"Sobrecargo"
+			],
+			[
+				"je",
+				"jefac"
+			],
+			[
+				"cop",
+				"copiloto"
+			],
+			[
+				"pi",
+				"piloto"
+			],
+			[
+				"vu",
+				"vuelo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/empleado-datos.blade.php",
+			"settings":
+			{
+				"buffer_size": 5597,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "empleado-actualizarperfil2.blade.sublime-project",
+			"settings":
+			{
+				"buffer_size": 72,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "empleado-constancias2.blade.php",
+			"settings":
+			{
+				"buffer_size": 427,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "empleado-nomina2.blade.php",
+			"settings":
+			{
+				"buffer_size": 8735,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "empleado-actualizarperfil2.blade.php",
+			"settings":
+			{
+				"buffer_size": 2320,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/RRHH-avca/node_modules/prueba",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/RRHH-avca/database/seeds/CargosTableSeeder.php",
+			"settings":
+			{
+				"buffer_size": 6315,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "empleado-oficio2.blade.php",
+			"settings":
+			{
+				"buffer_size": 3201,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/empleado-oficio.blade.php",
+			"settings":
+			{
+				"buffer_size": 6424,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/empleado-vistas.blade.php",
+			"settings":
+			{
+				"buffer_size": 2983,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "empleado-cargafamiliar2.blade.php",
+			"settings":
+			{
+				"buffer_size": 1580,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/parametros-nomina.blade.php",
+			"settings":
+			{
+				"buffer_size": 512,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/RRHH-avca",
+		"/C/xampp/htdocs/RRHH-avca/database",
+		"/C/xampp/htdocs/RRHH-avca/database/seeds",
+		"/C/xampp/htdocs/RRHH-avca/public",
+		"/C/xampp/htdocs/RRHH-avca/resources",
+		"/C/xampp/htdocs/RRHH-avca/resources/views",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleadovistas",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/ModuloMantenimiento",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/RRHH-avca/formatoperfil",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/ModuloMantenimiento/tabulador.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/nomina/consultarnomina.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/ModuloMantenimiento/sucursales.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleadovistas/empleado-actualizarperfil2.blade.php",
+		"/C/Users/user/Desktop/AspirantesTableSeeder.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleadovistas/empleado-cargafamiliar2.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/empleado-datos.blade.php",
+		"/C/Users/user/Downloads/AspirantesTableSeeder.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/nomina/generar.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/web.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/RutasNomina.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/layouts/admin.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleadovistas/empleado-nomina2.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/empleado-actualizarperfil.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleadovistas/empleado-oficio2.blade.php",
+		"/C/xampp/htdocs/avca/public/css/rrhh.css.map",
+		"/C/xampp/htdocs/avca/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/avca/public/css/app.css",
+		"/C/xampp/htdocs/avca/public/css/rrhh.css",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/backend/partials/nav.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/frontend/home.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/auth/register.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/home.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/frontend/offers.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/layouts/frontend.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/empleado-vistas.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/RutasModuloMantenimiento.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleadovistas/empleado-constancias2.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/partials/landing/contact.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/layouts/backend.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/ModuloMantenimiento/variables.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/backend/dashboard.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/backend/partials/captacion/seleccion.blade.php",
+		"/C/xampp/htdocs/avca/app/Http/Controllers/rrhh/SeleccionController.php",
+		"/C/xampp/htdocs/avca/routes/rrhh/backend.php",
+		"/C/xampp/htdocs/avca/composer.json",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/captacion/reclutamiento/consulta-interno.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/empleado-oficio.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/RutasEmpleadovistas.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/RutasEmpleado.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/empleado-cargafamiliar.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/empleado-constancias.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/empleado-nomina.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/parametros-nomina.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-entrevistados.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-verificados.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/seleccion-gerente.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleadovistas/conceptos-empleado.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-registrados.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/expediente/amonestacion.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/expediente/reconocimiento.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/expediente.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/expediente/reposos.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/captacion/contratacion.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/busqueda-empleado.blade.php",
+		"/C/xampp/htdocs/avca/resources/assets/js/components/backend/vacante/VacanteFilter.vue",
+		"/C/xampp/htdocs/avca/app/Http/Controllers/rrhh/AspiranteController.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/ModuloMantenimiento/conceptos.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/frontend/modals/frontend/aprendices.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/rrhh.blade.php",
+		"/C/xampp/htdocs/avca/routes/web.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/frontend/profile.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/frontend/modals/frontend/profesionales.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/frontend/modals/frontend/tecnicos.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/frontend/modals/aspirantes_form.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/backend/cargos/edit.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/backend/cargos/list.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-convocados.blade.php",
+		"/C/xampp/htdocs/avca/routes/rrhh.php",
+		"/C/xampp/htdocs/avca/routes/rrhh/frontend.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/backend/nomina/asignaciones-deducciones.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/public/css/w3.css",
+		"/C/xampp/htdocs/RRHH-avca/public/css/mantenimiento.css",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-seleccionables.blade.php",
+		"/C/xampp/htdocs/avca/app/Providers/AppServiceProvider.php",
+		"/C/xampp/htdocs/RRHH-avca/app/Providers/AppServiceProvider.php",
+		"/C/Users/user/Desktop/avcaPractica/empleados-intranet.html",
+		"/C/xampp/htdocs/avca/.env",
+		"/C/xampp/htdocs/RRHH-avca/.env",
+		"/C/xampp/htdocs/avca/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/dashboard.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/console.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/channels.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/api.php",
+		"/C/Users/user/Desktop/avcaPractica/pruebaBoostrap.html",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/partials/frontend/header.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/partials/frontend/selection.blade.php",
+		"/C/xampp/htdocs/avca/resources/views/rrhh/partials/frontend/applications.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/routes/RutasModuloCaptacion.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/admin/layouts/template.blade.php",
+		"/C/xampp/htdocs/RRHH-avca/resources/views/layouts/front.blade.php",
+		"/C/xampp/htdocs/avca/app/Http/Controllers/rrhh/TestController.php",
+		"/C/xampp/htdocs/RRHH-avca/.env.example",
+		"/C/xampp/htdocs/RRHH-avca/server.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/ModuloMantenimiento/sucursales.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/ModuloMantenimiento/tabulador.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/layouts/admin.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-seleccionables.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-entrevistados.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/.env",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/ModuloMantenimiento/variables.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/ModuloMantenimiento/conceptos.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-verificados.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/submenu/parametros-nomina.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/public/css/mantenimiento.css",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-convocados.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/captacion/seleccion/aspirantes-registrados.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/public/css/seleccion.css",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/submenu/seleccion-gerente.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/routes/RutasModuloCaptacion.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/layouts/template.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/routes/web.php",
+		"/C/xampp/htdocs/avca-rrhh/routes/RutasModuloMantenimiento.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/layouts/front.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/captacion/aspirantes.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/partials/captacion/contratacion.blade.php",
+		"/C/xampp/htdocs/avca-rrhh/resources/views/admin/gerente/dashboard.blade.php",
+		"/C/Users/user/Desktop/avcaPractica/estilos.css",
+		"/C/Users/user/Desktop/avcaPractica/examples/album/album.css",
+		"/C/xampp/htdocs/avca-rrhh/.git/config",
+		"/C/Users/user/AppData/Local/Temp/Rar$EX22.544/bootstrap-4.0.0/_layouts/examples.html",
+		"/C/xampp/htdocs/avca-rrhh/public/css/fa-svg-with-js.css",
+		"/C/xampp/htdocs/avca-rrhh/.env.example",
+		"/C/xampp/htdocs/avca-rrhh/package.json",
+		"/C/xampp/htdocs/avca-rrhh/composer.json",
+		"/C/Users/user/Desktop/pruebaHZorrilla/start.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			">\n",
+			"left",
+			"2x",
+			"fa-eye fa-2x\" style=\"color: black",
+			"                            \n",
+			"17",
+			"bonoasistencia",
+			"legend",
+			"Josefa Camejo",
+			"thumbs-up",
+			"thumbs-down",
+			"link",
+			"clipboard",
+			"outline-info",
+			"scope=\"col\"",
+			";\">",
+			"actualizartabulador",
+			"info",
+			"Vacacional",
+			"vacacional",
+			"right",
+			"left",
+			"list-alt",
+			"sync",
+			"Configurar",
+			">Configurar</",
+			"configurar",
+			"Configurar",
+			"user",
+			"config",
+			"se",
+			"config",
+			"mantenimient",
+			"css",
+			"btn-info",
+			"active",
+			"blade",
+			"variables",
+			"conceptos",
+			"variables",
+			"bootstrap-4.0.0",
+			"style",
+			"Carbon",
+			"date",
+			"aler",
+			"'Chequeado'"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/empleado-datos.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								579,
+								579
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "empleado-actualizarperfil2.blade.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 72,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "empleado-constancias2.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "empleado-nomina2.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7999,
+								7999
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 288.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "empleado-actualizarperfil2.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								741,
+								741
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/xampp/htdocs/RRHH-avca/node_modules/prueba",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/xampp/htdocs/RRHH-avca/database/seeds/CargosTableSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1338,
+								1338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "empleado-oficio2.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/empleado/empleado-oficio.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6411,
+								3402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 648.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/empleado-vistas.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2947,
+								2947
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "empleado-cargafamiliar2.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/xampp/htdocs/RRHH-avca/resources/views/admin/gerente/partials/submenu/parametros-nomina.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "empleado-actualizarperfil2.blade.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"appser",
+				"RRHH-avca\\app\\Providers\\AppServiceProvider.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 353.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
