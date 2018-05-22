@@ -9,66 +9,106 @@
      </div>
   
     <div class="card-block">
-        <fielset> 
+        
     
     @include ('admin.gerente.partials.submenu.gerente-vistas')<br>
     
-<h1>estoy en gerente2</h1>
+    <fielset> 
+<legend>Días feriados de sucursal</legend>
+    <div class="row">
+     
+      <div class="form-group col-md-6">
+        {!! Form::label('fecha_feriado', 'Días Feriado') !!} <i class="fas fa-calendar"></i><br>
+       <table class="table-hover table-sm table-bordered" style="clear: both;">
+                <thead class="thead-light thead-label-sm">
+                  <tr>
+                    <th class="col-md-1">Fecha</th>
+                    <th class="col-md-1">Día</th>
+                    <th class="col-md-4">Descripción</th>
+                   </tr>
+                </thead>
+                <tbody class="tbody-label-sm">
+                  
 
+                  <tr>
+                    <td class="align-middle">01/01/2018</td>
+                    <td class="align-middle">Jueves</td>
+                    <td class="align-middle">Primero de Mayo</td>
+                  </tr>                  
 
-  
-<div class="container">
-<h3>Listado de Empleados Activos</h3>
-              
-  <table class="table table-sm table-borderless">
-    <thead>
-      <tr>
-        <th>Cédula</th>
-        <th>Apellidos y Nombres</th>
-        <th>Departamento</th>
-        <th>Cargo</th>
-        <th class="text-sm-center">Turno</th>
-      
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="align-middle">12274999</td>
-        <td class="align-middle">Víctor Guzmán</td>
-        <td class="align-middle">Logistica</td>
-        <td class="align-middle">Conductor</td>
- 
-        <td class="text-sm-center align-middle"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#gerenteempleado"><i class="fas fa-sync"></i></button></td>
-        </tr>
-      <tr>
-        <td class="align-middle">15741667</td>
-        <td class="align-middle">César A. Fabbiani M</td>
-        <td class="align-middle">Gerencia</td>
-        <td class="align-middle">Asistente</td>
-   
-        <td class="text-sm-center align-middle"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#gerenteempleado"><i class="fas fa-sync"></i></button></td>
-      </tr>
-      <tr>
-        <td class="align-middle">13598083</td>
-        <td class="align-middle">Carolina Carvajal</td>
-        <td class="align-middle">Atención al Público</td>
-        <td class="align-middle">Operador de Tráfico</td>
-        
-        <td class="text-sm-center align-middle"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#gerenteempleado"><i class="fas fa-sync"></i></button></i></td>
-      </tr>
-    </tbody>
+                  <tr>
+                    <td class="align-middle">21/01/2018</td>
+                    <td class="align-middle">Miércoles</td>
+                    <td class="align-middle">Día de Santa Ines</td>
+                  </tr>
+
+                  <tr>
+                    <td class="align-middle">10/02/2018</td>
+                    <td class="align-middle">Lunes</td>
+                    <td class="align-middle">Lunes de carnaval</td>
+                  </tr>
+
+                  <tr>
+                    <td class="align-middle">11/02/2018</td>
+                    <td class="align-middle">Martes</td>
+                    <td class="align-middle">Martes de carnaval</td>
+                  </tr>
+
+                  <tr>
+                    <td class="align-middle">01/05/2018</td>
+                    <td class="align-middle">Martes</td>
+                    <td class="align-middle">Día Internacional del Trabajador</td>
+                  </tr>
+
+                  <tr>
+                    <td class="align-middle">24/06/2018</td>
+                    <td class="align-middle">Martes</td>
+                    <td class="align-middle">Día </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">24/07/2018</td>
+                    <td class="align-middle">Martes</td>
+                    <td class="align-middle">Día</td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle">12/10/2018</td>
+                    <td class="align-middle">Jueves</td>
+                    <td class="align-middle">Día de la resistencia Indigena</td>
+                  </tr>
+                  
+                   </tbody>
+
   </table>
+        <!--<span>dia1, dias2, dia3, dia4, dia5, dia6, dia7, dia8, dia9, dia10, dia11 </span>
+          
+            <li>data1</li>
+              <li>data2</li>
+              <li>data3</li>
+              <li>data4</li>
+              <li>data5</li>
+              <li>data6</li>
+              <li>data7</li>-->
+            
+       
+      </div>
+      
+      <div class="form-group col-md-3">
+        {!! Form::label('fecha_feriado', 'Ingresar día Feriado') !!} <i class="fas fa-calendar"></i>
+        {!! Form::date('fecha_feriado', null, ['class' => 'form-control']) !!}
+        </div>
+        
+
+        <div class="col-md-1">
+        <br><br>
+           <input type="button" class="btn btn-sm btn-success" value="Registrar">
+        </div>
+
+    </div>
 </div>
 
-
-
-
-
-
+   
 </fielset>
-</div>
-</div>
-</div>
+
 
 <!--inicio del modal Registro de Historial de Empleado-->
     <div class="modal fade" id="gerenteempleado" tabindex="-1" role="dialog" aria-labelledby="oficio" aria-hidden="true" class="fondo-modal">

@@ -9,7 +9,6 @@
   <meta name="keyword" content="Bootstrap,Admin,Template,Dashboard,Laravel">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="shortcut icon" href="img/favicon.png">
-
   <title>Gerencia de RRHH</title>
 
   <!-- Icons -->
@@ -131,7 +130,28 @@
                       
         <li class="nav-item"><a href="{{ route('admin.gerente.partials.empleadovistas.empleado-nomina2') }}" class="nav-link">vistas empleado</a></li>
 
-        <li class="nav-item"><a href="{{ route('admin.gerente.partials.gerentevistas.gerente1') }}" class="nav-link">vistas gerente sucursales</a></li>
+        <!--<li class="nav-item"><a href="{{ route('admin.gerente.partials.gerentevistas.gerente1') }}" class="nav-link">Sucursal "AJS"</a></li>-->
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#sucursalCollapse" role="button" aria-expanded="false" aria-controls="mantenimientoCollapse">
+            <i class="fas fa-cog"></i> Sucursal "AJS"
+            <i class="fas fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <div class="collapse" id="sucursalCollapse">
+            <ul class="nav pl-3 flex-column">
+              <li class="nav-item"><a href="{{ route('admin.gerente.partials.gerentevistas.gerente1') }}" class="nav-link">Personal</a></li>
+
+              <li class="nav-item"><a href="{{ route('admin.gerente.partials.gerentevistas.gerente2') }}" class="nav-link">Parámetros de Asistencia</a></li>
+              
+              <li class="nav-item"><a href="{{ route('admin.gerente.partials.gerentevistas.gerente3') }}" class="nav-link">Reportes y estadísticas</a></li>
+              <li class="nav-item"><a href="close" class="nav-link">Cerrar</a></li>
+              
+            </ul>
+          </div>
+        </li>
+
+
+
       </ul>
     </nav>
   </aside>
